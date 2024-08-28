@@ -58,8 +58,8 @@ p {
     margin: 10px 0;
     color: #ccc;
 }
-/* 
-.timeline-item::after {
+
+/* .timeline-item::after {
     content: '';
     position: absolute;
     left: -1px;
