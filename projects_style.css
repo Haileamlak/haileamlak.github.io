@@ -1,0 +1,149 @@
+/* 
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    
+}
+.project-card-back {
+    width: 320px;
+    height: 360px;
+    background-image: linear-gradient(163deg, #128ee0 0%, #097aaf 100%);
+    border-radius: 20px;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card-front {
+    width: 320px;
+    height: 360px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.project-card-front:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.project-card-back:hover {
+    box-shadow: 0px 0px 30px 1px rgba(7, 106, 219, 0.3);
+}
+
+.project-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/bbbb.webp' );
+    /* Replace with your image URL 
+
+    text-align: left;
+    padding: 10px;
+}
+
+.project-info {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+}
+
+.project-title {
+    font-size: 1.2em;
+    /* margin-bottom: 5px; 
+}
+
+.project-description {
+    font-size: 0.9em;
+    color: #ccc;
+} */
+/* From Uiverse.io by D3OXY */
+.card {
+    position: relative;
+    width: 310px;
+    aspect-ratio: 16/9;
+    background-color: rgba(0, 0, 0, 0.171);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #025981;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 20px;
+    color: #0b73c9;
+    font-weight: 700;
+}
+
+.card:hover svg {
+    scale: 0;
+}
+
+.card__description {
+    margin: 10px 0 10px;
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+.card__button {
+    padding: 15px;
+    border-radius: 8px;
+    background: #028fb3;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #777;
+}
