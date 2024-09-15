@@ -52,7 +52,7 @@
 .card__title {
     margin: 0;
     font-size: 20px;
-    color: #0b73c9;
+    color: #B28135;
     font-weight: 700;
 }
 
@@ -70,8 +70,8 @@
 .card__button {
     padding: 15px;
     border-radius: 8px;
-    background: #028fb3;
-    border: none;
+    /* background: #B28135; */
+    border:1px solid #B28135;
     color: rgb(255, 255, 255);
 }
 

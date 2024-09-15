@@ -10,6 +10,8 @@
     flex-wrap: wrap;
     max-width: 900px;
     margin: 0 auto;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 #about-me .image {
@@ -31,22 +33,25 @@
     min-width: 100px;
     max-width: 600px;
     text-align: left;
+font-family: 'Roboto', sans-serif;
 }
 
 #about-me h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: rgb(5, 134, 177);
+    color: #B28135;
+    font-family: "Montserrat", sans-serif;
 }
-#about-me h2 {
+/* #about-me h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-}
+} */
 
 #about-me p {
     font-size: 1.2em;
     line-height: 1.6;
     margin-bottom: 20px;
+    /* font-family: "Montserrat", sans-serif; */
 }
 
 /* Responsive Styles */

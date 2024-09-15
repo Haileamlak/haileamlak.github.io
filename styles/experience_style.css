@@ -15,7 +15,7 @@ h2 {
 .timeline {
     /* position: relative; */
     /* padding-left: 30px; */
-    border-left: 2px solid #0183b6;
+    border-left: 2px solid #B28135;
 }
 
 .timeline-item {
@@ -26,7 +26,7 @@ h2 {
 .timeline-point {
     width: 12px;
     height: 12px;
-    background-color: #0183b6;
+    background-color: #B28135;
     border-radius: 50%;
     position: absolute;
     left: -7px;
@@ -38,7 +38,7 @@ h2 {
 }
 
 .date {
-    color: #0183b6;
+    color: #B28135;
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -54,9 +54,13 @@ h4 {
     color: #ccc;
 }
 
-p {
+.timeline-content p {
     margin: 10px 0;
     color: #ccc;
+    border-left: 1px solid #B28135;
+    list-style-type: circle;   
+    padding-left: 20px;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* .timeline-item::after {
