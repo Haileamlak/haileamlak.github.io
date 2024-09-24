@@ -22,7 +22,7 @@
     background-color: #2a2a2a;
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     box-shadow: 0px 0px 15px 1px #B28135;
 }
 
@@ -48,5 +48,12 @@
 .description {
     font-size: 1rem;
     line-height: 1.6;
-    color: #ddd;
+    list-style: none;
+    list-style-type: disc;
+    font-family: "Montserrat", sans-serif;
+    color: #ccc;
+}
+
+.description::marker {
+    color: #B28135;
 }
