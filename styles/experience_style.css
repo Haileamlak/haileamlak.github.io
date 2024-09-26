@@ -60,7 +60,7 @@ h4 {
     border-left: 1px solid #B28135;
     list-style-type: circle;   
     padding-left: 20px;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
 }
 
 /* .timeline-item::after {
