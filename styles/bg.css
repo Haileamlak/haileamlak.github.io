@@ -1,19 +1,59 @@
-html,
-body {
-    height: 100%;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Fredoka;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
-    background: url(https://i.pinimg.com/736x/2a/c5/8c/2ac58ca3c5e1d553148f12ba1d7a38e8.jpg);
+    background: url(https://i.pinimg.com/736x/2a/c5/8c/2ac58ca3c5e1d553148f12ba1d7a38e8.jpg) no-repeat center center fixed;;
     background-size: cover;
 }
+.content-wrapper {
+    background-color: rgba(31, 31, 28, 0.6);
+    /* Semi-transparent overlay */
+    
+    padding: 20px;
+    min-height: 100vh;
+}
+/* Sections Styling */
+header,
+section,
+footer {
+    /* max-width: 900px; */
+    /* margin: 50px auto; */
+    /* padding: 20px; */
+    /* background: rgba(255, 255, 255, 0.8); */
+    /* Section background */
+    border-radius: 40px;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
+}
 
+/* Text Styling */
+h1,
+h2,
+p {
+    color: #ffffff;
+    /* text-align: center;  */
+}
+
+/* Adjust header style
+header {
+    background: rgba(0, 0, 0, 0.7);
+    /* Header background 
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+} */
 .firefly {
     position: fixed;
     left: 50%;
     top: 50%;
-    width: 0.4vw;
-    height: 0.4vw;
+    width: 0.9vw;
+    height: 0.9vw;
     margin: -0.2vw 0 0 9.8vw;
     animation: ease 200s alternate infinite;
     pointer-events: none;

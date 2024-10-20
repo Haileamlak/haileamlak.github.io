@@ -1,9 +1,10 @@
 
 
 .experience-section {
-    padding: 50px;
+    /* padding: 50px; */
     max-width: 800px;
     margin: auto;
+    text-align: left;
 }
 
 h2 {
