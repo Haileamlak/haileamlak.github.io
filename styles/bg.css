@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background: url(https://i.pinimg.com/736x/2a/c5/8c/2ac58ca3c5e1d553148f12ba1d7a38e8.jpg) no-repeat center center fixed;;
+    background: url("https://cdn.pixabay.com/photo/2022/09/21/17/02/blue-background-7470781_1280.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 .content-wrapper {
