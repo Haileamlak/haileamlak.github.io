@@ -18,7 +18,7 @@ h2 {
     /* padding-left: 30px; */
     max-width: 800px;
     margin: auto;
-    border-left: 2px solid #0a6f9e;
+    border-left: 2px solid #e67e22;
 }
 
 .timeline-item {
@@ -29,7 +29,7 @@ h2 {
 .timeline-point {
     width: 12px;
     height: 12px;
-    background-color: #0a6f9e;
+    background-color: #e67e22;
     border-radius: 50%;
     position: absolute;
     left: -7px;
@@ -41,7 +41,7 @@ h2 {
 }
 
 .date {
-    color: #0a6f9e;
+    color: #e67e22;
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -60,7 +60,7 @@ h4 {
 .timeline-content p {
     margin: 10px 0;
     color: #ccc;
-    border-left: 1px solid #0a6f9e;
+    border-left: 1px solid #e67e22;
     list-style-type: circle;   
     padding-left: 20px;
     /* font-family: "Montserrat", sans-serif; */
