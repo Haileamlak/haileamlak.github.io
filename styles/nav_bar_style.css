@@ -26,7 +26,7 @@ a {
  }
 
  nav a:hover {
-     color: #B28135;
+     color: #0a6f9e;
  }
 
 .navbar {
@@ -78,8 +78,11 @@ a {
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-    .nav-links {
+    .navbar {
         display: none;
+    }
+    .nav-links {
+        /* display: none; */
         flex-direction: column;
         width: 100%;
         position: absolute;

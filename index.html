@@ -30,10 +30,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
   </head>
-
+<!-- <style> * {border: 1px solid red}</style> -->
   <body>
     <div class="content-wrapper">
-    <header>
+    <header  class="dark-section">
       <nav class="navbar">
         <div class="logo">
           <a href="#"
@@ -116,7 +116,7 @@
       </div>
     </section>
 
-    <section id="education">
+    <section id="education" class="dark-section">
       <div class="education-container">
         <h2 class="section-title">Education</h2>
         <div class="education-item">
@@ -242,11 +242,12 @@
       </div>
     </section>
     <!-- </section> -->
-    <h2>Projects</h2>
-    <section id="projects" class="projects">
+    <section id="projects" class="projects dark-section">
+        <h2>Projects</h2>
         
-      <div class="card">
-        <img src="https://imageio.forbes.com/specials-images/imageserve/65fcc9981861972da1555f96/Chatbot-Artificial-Intelligence-abstract-concept-vector-illustration-/960x0.jpg?format=jpg&width=960" alt="API" class="card__image" />
+      <div class="projects-list">
+        <div class="card">
+        <img src="images/ai-agent.png" alt="API" class="card__image" />
         <div class="card__content">
           <p class="card__title">AI Content Creator Agent</p>
           <p class="card__description">
@@ -292,11 +293,7 @@
         <div class="card__content">
           <p class="card__title">Task Manager API</p>
           <p class="card__description">
-            A scalable RESTful API built with Go that provides secure user
-            authentication and authorization, task management, and role-based
-            access control, integrating with MongoDB for data storage. It
-            follows Clean Architecture principles and includes comprehensive
-            unit tests to ensure code quality.
+            A scalable RESTful API designed for managing tasks that supports user authentication and authorization, and role-based access control. The API is built using Go and follows Clean Architecture principles.
           </p>
           <!-- <button class="card__button">Live Demo</button> -->
           <br />
@@ -378,8 +375,8 @@
           </a>
         </div>
       </div>
-      <div class="card" style="background-color: white">
-        <img src="images/pagumelogo.jpg" alt="Mk Tube" class="card__image" />
+      <div class="card" >
+        <img src="images/pagumelogo-removebg-preview.png" alt="Mk Tube" class="card__image" />
         <div class="card__content">
           <p class="card__title">Pagume 7</p>
           <p class="card__description">
@@ -400,10 +397,11 @@
           </a>
         </div>
       </div>
+      </div>
     </section>
 
     <div id="skills" class="skills-container">
-      <h2>TECH STACK</h2>
+      <h2>Tech Stack</h2>
 
       <div class="skills-grid">
         <div class="skill-item">
@@ -577,7 +575,7 @@
         <!-- Add more skills as needed -->
       </div>
     </div>
-    <section id="contact" id="contact">
+    <section id="contact" class="dark-section">
       <div class="contact-container">
         <!-- <h3>Get in Touch</h3> -->
         <p>Please feel free to reach out to me.</p>

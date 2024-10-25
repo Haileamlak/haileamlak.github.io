@@ -7,7 +7,23 @@ body {
     font-family: Fredoka;
     /* overflow-x: hidden; */
 }
+/* h2 {
+    font-size: 2rem;
+    color: #333;
+    position: relative;
+    text-align: center;
+}
 
+h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #007acc;
+    /* Accent color */
+    margin: 10px auto;
+    border-radius: 2px;
+} */
 header {
     padding: 20px;
     /* background-color: #1f1f1f; */
@@ -28,7 +44,7 @@ header h1 {
  
 
 section {
-    padding: 60px 20px;
+    padding: 10px 20px;
     text-align: center;
     position: relative;
     opacity: 0;
@@ -42,14 +58,16 @@ section.visible {
 }
 
 .dark-section {
-    background-color: #333;
-    /* background-image: url("images/bbbb.webp"); */
-    /* opacity: 0.4;*/
+    /* background-color: #01364e; */
+        background-color: rgba(0, 0, 0, 0.5);
+            /* Black background with 70% opacity */
+    /* background-image: url("../images/background.png"); */
+    /* opacity: 0.1; */
 
 } 
 
 .parallax-bg {
-    background-image: url("images/bbbb.webp");
+    background-image: url("../images/avatar.png");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -146,6 +164,9 @@ footer p {
     .portfolio img {
         max-width: 150px;
     }
+    section {
+        padding: 0;
+    }
 }
 
 @keyframes fadeIn {
@@ -181,17 +202,6 @@ footer p {
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-}
-
-.projects {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-    /* margin-bottom: 50px; */
 }
 
 /* .card {
