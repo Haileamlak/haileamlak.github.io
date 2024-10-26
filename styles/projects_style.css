@@ -27,13 +27,16 @@
     /* transparency */
     /* background-color: #011e2b; */
 }
+.projects {
+    padding: 10px 0;
+}
 .projects-list {
     display: flex;
         justify-content: center;
         gap: 40px;
         flex-wrap: wrap;
         max-width: 1000px;
-        margin: 0 auto;
+        margin: 0px auto;
         padding: 20px;
         /* margin-bottom: 50px; */
 }
