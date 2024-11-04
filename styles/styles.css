@@ -9,9 +9,11 @@ body {
 }
 
 .card__button {
-    border: 1px solid #e67e22;
-    padding: 15px 20px;
-    border-radius: 15px;
+    /* border: 1px solid #e67e22; */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #686868;
+    align-self: center;
 }
 
 .headline {
@@ -34,7 +36,7 @@ body {
 
 .section-title {
     margin-top: 0px;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 500;
 }
 
@@ -72,6 +74,7 @@ section {
     transition: all 1s ease;
     display: flex;
     justify-content: space-evenly;
+    padding: 10px 0;
 }
 
 section.visible {

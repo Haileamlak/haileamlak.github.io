@@ -5,7 +5,7 @@
 .projects-list {
     display: flex;
     /* justify-content: center; */
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
     /* max-width: 1000px;
          */
@@ -15,7 +15,7 @@
     /* margin-bottom: 50px; */
 
     /* two elements per row */
-    
+
 
 }
 
@@ -43,7 +43,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     color: #011e2b;
-    padding:  5px ;
+    padding: 10px 15px;
     background-color: #011e2b;
     text-align: left;
 }
@@ -86,8 +86,14 @@
 
 .project-img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 90%;
     object-fit: cover;
+    /* margin: 110px; */
+
+}
+
+.project-info {
+    gap: 5px;
 
 }
 
@@ -98,7 +104,22 @@
     font-size: 1.4rem;
     font-weight: 500;
     margin: 5px 0;
-    color: #e67e22;
+    color: #fff;
+}
+
+.project-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 35px;
+
+}
+
+.duration {
+    margin: auto 0;
+    font-weight: lighter;
+    font-style: italic;
 }
 
 .project-type {
@@ -109,9 +130,11 @@
     font-weight: 200;
     margin: 5px 0;
     color: #fff;
+    font-style: italic;
 }
+
 /* Project Description */
-.project-description  {
+.project-description {
     font-size: 1rem;
     line-height: 1.2;
     margin-bottom: 15px;
@@ -120,9 +143,10 @@
 .project-name {
     font-size: 1.2rem;
     font-weight: 500;
-    margin: 5px 0;
+    /* margin: 5px 0; */
     color: #e67e22;
 }
+
 .project-tech,
 .project-role {
     font-size: 0.9rem;
@@ -167,26 +191,33 @@
     .projects-list {
         gap: 20px;
     }
+
     .project {
         /* width: 400px; */
 
     }
+
     .project-category {
         font-size: 1.2rem;
     }
+
     .project-type {
         font-size: 1rem;
     }
+
     .project-description {
         font-size: 0.9rem;
     }
+
     .project-name {
         font-size: 1rem;
     }
+
     .project-tech,
     .project-role {
         font-size: 0.8rem;
     }
+
     .project-link {
         font-size: 0.8rem;
     }
@@ -197,27 +228,32 @@
     .projects-list {
         gap: 20px;
     }
+
     /* .project {
         aspect-ratio: 5/3;
     } */
     .project-category {
         font-size: 1.2rem;
     }
+
     .project-type {
         font-size: 1rem;
     }
+
     .project-description {
         font-size: 0.9rem;
     }
+
     .project-name {
         font-size: 1rem;
     }
+
     .project-tech,
     .project-role {
         font-size: 0.8rem;
     }
+
     .project-link {
         font-size: 0.8rem;
     }
 }
-
