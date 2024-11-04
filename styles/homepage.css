@@ -1,0 +1,123 @@
+/* Full-page styling */
+#homepage {
+    min-height: 90vh;
+}
+
+.home-image {
+    max-width: 40%;
+    min-width: 35%;
+    /* text-align: left;  */
+    padding: 20px;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.home-text {
+    min-width: 50%;
+    max-width: 60%;
+    text-align: center;
+    /* padding: 20px; */
+    justify-content: space-evenly;
+    margin: auto 0;
+    
+}
+
+/* Image container styling */
+.home-image img {
+    width: 75%;
+    /* max-width: 400px; */
+    /* height: 90; */
+    border-radius: 50%;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    /* Smooth zoom transition on hover */
+    margin: 0 auto;
+}
+
+.home-image img:hover {
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+}
+
+/* Text container styling */
+.home-text h1,
+.home-text h2 {
+    margin: 20px 0;
+}
+
+.home-text h1  {
+    font-size: 2.2rem;
+    color: #e67e22;
+    /* Accent color for "Hi, I'm" */
+}
+
+.home-text .name {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.home-text h2 {
+    font-size: 1.5rem;
+    color: #bbbbbb;
+}
+@media (max-width: 1000px) {
+    #homepage {
+        flex-direction: row;
+    }
+    .home-image {
+        max-width: 40%;
+        min-width: 30%;
+    }
+
+    .home-text {
+        min-width: 60%;
+        max-width: 70%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    #homepage {
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: center;
+    }
+
+    .home-image {
+        /* text-align: center; */
+        justify-content: center;
+        max-width: 70%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .home-text {
+        /* text-align: center; */
+        justify-content: center;
+        max-width: 100%;
+        padding: 0;
+    }
+}
+@media (max-width: 480px) {
+    #homepage {
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: center;
+    }
+
+    .home-image {
+        /* text-align: center; */
+        justify-content: center;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .home-text {
+        /* text-align: center; */
+        justify-content: center;
+        max-width: 100%;
+        padding: 0;
+    }
+}

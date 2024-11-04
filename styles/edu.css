@@ -1,21 +1,7 @@
-#education {
-    /* background-color: #1a1a1a; */
-    color: #fff;
-    /* padding: 60px 20px; */
-}
-
 .education-container {
-    max-width: 800px;
-    margin: 0px auto;
+    /* margin: 10px auto; */
     padding: 20px;
     text-align: left;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    /* margin-bottom: 40px; */
-    /* color: #B28135; */
 }
 
 .education-item {
@@ -34,7 +20,7 @@
 
 .degree {
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 10px;
 }
 

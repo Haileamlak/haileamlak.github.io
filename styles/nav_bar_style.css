@@ -1,108 +1,100 @@
-/* Basic Styles */
-body {
-    margin: 0;
-    padding: 0;
-    /* font-family: Arial, sans-serif; */
-    /* background-color: #1a1a1a; */
-    /* color: white; */
-}
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
- nav {
-     text-align: center;
-     margin-top: 0px;
- }
-
- nav a {
-     color: #ffffff;
-     margin: 0 15px;
-     text-decoration: none;
-     font-size: 1px;
-     position: relative;
- }
-
- nav a:hover {
-     color: #e67e22;
- }
-
+/* Navbar Container */
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 5px 0px;
+    justify-content: space-between;
+    padding: 20px 2.5%;
     /* background-color: #333; */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 95%;
+    z-index: 1000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.logo a {
-    font-size: 1.5em;
-    font-weight: bold;
-    width: 50px;
-    height: 64;
+/* Logo Styling */
+.navbar-logo img {
+    height: 40px;
+    /* Adjust logo size */
+    width: auto;
 }
 
-.logo a img {
-    width: 48px;
-    height: 48x;
-}
-
-.nav-links {
+/* Navbar Links */
+.navbar-links {
     display: flex;
     list-style: none;
+    gap: 30px;
 }
 
-.nav-links li {
-    margin-left: 20px;
+.navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    /* padding: 0px 10px; */
+    transition: color 0.3s ease;
+    font-weight: 500;
 }
 
-.nav-links li a {
-    font-size: 1.2em;
-    font-weight: normal;
+.navbar-links li a:hover {
+    color: #e67e22;
+    /* Change color on hover */
 }
 
-.menu-toggle {
+/* Toggle Button for Mobile */
+.navbar-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
 
-.menu-toggle .bar {
+.navbar-toggle span {
     width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
-    transition: 0.3s;
+    height: 1px;
+    background-color: #fff;
+    margin: 4px;
+    transition: all 0.3s;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    .navbar {
+/* Responsive Navbar */
+@media (max-width: 850px) {
+
+    /* Hide Links on Small Screens */
+    .navbar-links {
         display: none;
-    }
-    .nav-links {
-        /* display: none; */
         flex-direction: column;
-        width: 100%;
         position: absolute;
-        top: 60px;
-        left: -100%;
-        /* background-color: #333; */
-        transition: 0.5s;
+        top: -15px;
+        right: 0px;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 15px;
+        width: 150px;
+        gap: 20px;
     }
 
-    .nav-links.active {
-        left: 0;
-    }
-
-    .nav-links li {
-        margin: 15px 0;
-        text-align: center;
-    }
-
-    .menu-toggle {
+    /* Show Links When Toggle is Active */
+    .navbar-links.active {
         display: flex;
     }
+
+    /* Show Toggle Button on Mobile */
+    .navbar-toggle {
+        display: flex;
+    }
+
+    /* Animate Toggle Button */
+    .navbar-toggle.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-9.5px, 6px);
+    }
+
+    .navbar-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggle.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-9.5px, -6px);
+    }
+
 }

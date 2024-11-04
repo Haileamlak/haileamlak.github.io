@@ -1,29 +1,21 @@
-
-
-.experience-section {
-    /* padding: 50px; */
-    margin: auto;
-    text-align: left;
-    margin-bottom: 20px;
+.experiences {
+    padding: 20px;
 }
 
-h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 50px;
-}
 
 .timeline {
     /* position: relative; */
     /* padding-left: 30px; */
-    max-width: 800px;
+    /* max-width: 800px; */
     margin: auto;
     border-left: 2px solid #e67e22;
+    text-align: left;
 }
 
 .timeline-item {
     margin-bottom: 30px;
     position: relative;
+    padding-left: 10px;
 }
 
 .timeline-point {
@@ -42,26 +34,28 @@ h2 {
 
 .date {
     color: #e67e22;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 1.2em;
 }
 
 h3 {
     margin: 5px 0;
     font-size: 1.5em;
+    font-weight: 500;
 }
 
 h4 {
     margin: 5px 0;
     font-size: 1.2em;
     color: #ccc;
+    font-weight: 500;
 }
 
 .timeline-content p {
     margin: 10px 0;
     color: #ccc;
     border-left: 1px solid #e67e22;
-    list-style-type: circle;   
+    list-style-type: circle;
     padding-left: 20px;
     /* font-family: "Montserrat", sans-serif; */
 }
