@@ -58,14 +58,14 @@
                 <a href="#"><img src="images/avatar.png" alt="Logo" /></a> <!-- Replace with your logo image -->
             </div>
             <ul class="navbar-links">
-                <li><a href="#homepage">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Tech Stack</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="navbar-link" href="#homepage">Home</a></li>
+                <li><a class="navbar-link" href="#about-me">About Me</a></li>
+                <li><a class="navbar-link" href="#education">Education</a></li>
+                <li><a class="navbar-link" href="#experience">Experience</a></li>
+                <li><a class="navbar-link" href="#projects">Projects</a></li>
+                <li><a class="navbar-link" href="#skills">Tech Stack</a></li>
+                <li><a class="navbar-link" href="#achievements">Achievements</a></li>
+                <li><a class="navbar-link" href="#contact">Contact</a></li>
 
             </ul>
             <div class="navbar-toggle" id="navbar-toggle">
@@ -345,7 +345,7 @@
                                 <strong>Content Creator Agent</strong>
                             </p>
                             <p class="duration">
-                                Aug. 2024 - Sep. 2024
+                                Aug. - Sep. 2024
                             </p>
                         </div>
                         <p class="project-description">
@@ -498,7 +498,7 @@
                                 <strong>Abyssinia Tickets</strong>
                             </p>
                             <p class="duration">
-                                Feb. 2024 - Jun. 2024
+                                Feb. - Jun. 2024
                             </p>
                         </div>
                         <p class="project-description">
@@ -538,7 +538,7 @@
                                 <strong>Hakime</strong>
                             </p>
                             <p class="duration">
-                                Oct. 2023 - Dec. 2023
+                                Oct. - Dec. 2023
                             </p>
                         </div>
                         <p class="project-description">
@@ -576,7 +576,7 @@
                                 <strong>Mk Tube</strong>
                             </p>
                             <p class="duration">
-                                Jan. 2023 - Jul. 2023
+                                Jan. - Jul. 2023
                             </p>
                         </div>
                         <p class="project-description">
@@ -611,7 +611,7 @@
                                 <strong>Pagume 7</strong>
                             </p>
                             <p class="duration">
-                                Sep. 2022 - Nov. 2022
+                                Sep. - Nov. 2022
                             </p>
                         </div>
                         <p class="project-description">
@@ -806,8 +806,8 @@
                     <div class="content">
                         <h3>1st Place - MK ICT Competition</h3>
                         <p>Secured 1st place in a Hackathon, developing a live and on-demand video streaming app for <a
-                                href="https://www.youtube.com/@EOTCMK" style="color: #fff; font-weight: normal;">MK Tv
-                                Broadcast Service</a> among 20+ students.</p>
+                                href="https://www.youtube.com/@EOTCMK" style="color: #fff; font-weight: normal;"><u>MK Tv
+                                Broadcast Service</u></a> among 20+ participants.</p>
                     </div>
                 </div>
                 <div class="achievement">
@@ -822,17 +822,28 @@
                     <div class="date">Feb. 2024</div>
                     <div class="content">
                         <h3>2nd Place - A2SV Internal Triad Contest</h3>
-                        <p>Achieved 2nd place in a programming contest organized by A2SV as a team of 3 among 40+ teams.
-                        
+                        <p>Achieved 2nd place in a triad programming contest organized by A2SV for its members as a team
+                            of 3 among 40+ teams.
+
                     </div>
                 </div>
                 <div class="achievement">
                     <div class="date">Feb. 2024</div>
                     <div class="content">
                         <h3>1st Place - A2SV Internal Group Contest</h3>
-                        <p>Selected to participate in a group contest representing my group with other two students
+                        <p>Selected to participate in a group contest organized by A2SV for its memebers representing my
+                            group with other two students
                             among 26 students. We
                             won the contest beating the other groups.</p>
+                    </div>
+
+                </div>
+                <div class="achievement">
+                    <div class="date">May. 2024</div>
+                    <div class="content">
+                        <h3>10th Place - Ethiopian Collegiate Programming Contest City Cup</h3>
+                        <p>Secured 10th place in a programming contest organized by the Ethiopian Collegiate Programming
+                            Contest (EtCPC) as a team of 3 among 100+ participants.</p>
                     </div>
 
                 </div>
@@ -935,15 +946,20 @@
             });
 
             const mobileMenu = document.getElementById("mobile-menu");
-            const navLinks = document.querySelector(".nav-links");
+            const navLinks = document.querySelector(".navbar-links");
             const toggleButton = document.querySelector(".navbar-toggle");
 
             toggleButton.addEventListener("click", () => {
                 toggleButton.classList.toggle("active");
             });
 
-            mobileMenu.addEventListener("click", () => {
-                navLinks.classList.toggle("active");
+            const navLink = document.querySelectorAll(".navbar-link");
+
+            navLink.forEach((link) => {
+                link.addEventListener("click", () => {
+                    navLinks.classList.toggle("active");
+                    toggleButton.classList.toggle("active");
+                });
             });
 
         </script>
