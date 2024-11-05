@@ -1,6 +1,8 @@
 /* Full-page styling */
 #homepage {
     min-height: 90vh;
+    opacity: 1;
+    animation: fadeIn 1.5s ease-in;
 }
 
 .home-image {
@@ -21,6 +23,7 @@
     margin: auto 0;
     
 }
+
 
 /* Image container styling */
 .home-image img {
