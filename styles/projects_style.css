@@ -1,5 +1,5 @@
-.projects {
-    /* padding: 10px 0; */
+#projects {
+    /* padding-right: 30px; */
 }
 
 .projects-list {
@@ -24,7 +24,7 @@
     position: relative;
     border-radius: 20px;
     max-width: 400px;
-    max-height: 500px;
+    max-height: 550px;
     background-color: dark;
     -webkit-box-shadow: 1px 1px 12px #011e2b;
     box-shadow: 1px 1px 12px #011e2b;
@@ -69,7 +69,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
+    -webkit-box-pack: center; 
     -ms-flex-pack: center;
     justify-content: center;
     overflow: hidden;
@@ -229,9 +229,13 @@
         gap: 20px;
     }
 
-    /* .project {
-        aspect-ratio: 5/3;
-    } */
+    #projects {
+        padding-right: 30px;
+    }
+
+    .project {
+        /* aspect-ratio: 5/3; */
+    }
     .project-category {
         font-size: 1.2rem;
     }
