@@ -1,0 +1,28 @@
+/* Hero styles */
+#hero {
+    background: #e6ecf0;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #222;
+    color: #fff;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #444;
+}
