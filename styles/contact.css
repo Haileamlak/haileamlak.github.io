@@ -1,0 +1,157 @@
+#contact {
+    /* background-color: #1a1a1a; */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-info a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.contact-info img {
+    width: 50px;
+    height: 50px;
+    /* border-radius: 50%; */
+}
+
+.contact-info a:hover {
+    transform: scale(1.1);
+}
+
+
+/* From Uiverse.io by aadium */
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f2f2f2; */
+    box-shadow: 0px 0px 15px #00000027;
+    padding: 15px 10px;
+    border-radius: 5em;
+
+    /* width fit to its children */
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px #00000027;
+    transition: 0.3s;
+}
+
+.social-button:hover {
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+    transition: 0.3s;
+    height: 20px;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.facebook svg {
+    fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+    fill: #3b5998;
+}
+
+.github {
+    background-color: #333;
+}
+
+.github svg {
+    width: 25px;
+    height: 25px;
+    fill: #f2f2f2;
+}
+
+.github:hover svg {
+    fill: #333;
+}
+
+.linkedin {
+    background-color: #333;
+}
+
+.linkedin svg {
+    fill: #f2f2f2;
+}
+
+.linkedin:hover svg {
+    fill: #0077b5;
+}
+
+.email {
+    background-color: #333;
+}
+
+.email svg {
+    fill: #333;
+}
+
+.email:hover svg {
+    fill: #f2f2f2;
+}
+
+.leetcode {
+    background-color: #333;
+}
+
+.leetcode svg {
+    fill: #f2f2f2;
+}
+
+.leetcode:hover svg {
+    fill: #f2f2f2;
+}
+
+.codeforces {
+    background-color: #333;
+}
+
+.codeforces svg {
+    fill: #f2f2f2;
+}
+
+.codeforces:hover svg {
+    fill: #f2f2f2;
+}

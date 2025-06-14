@@ -1,0 +1,42 @@
+/* Button styles */
+.btn,
+.btn-brown {
+    background-color: #3674B5;
+    /* background-color: #D47E30; */
+    color: white;
+    border: none;
+    padding: .8rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+    /* button should be able to contain text */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: .5rem;
+    text-align: center;
+    width: fit-content;
+    /* max-width: 400px; */
+    height: fit-content;
+    line-height: 1.5;
+    /* min-width: 150px */
+        /* border: .1px solid #ac663e; */
+
+}
+
+.btn:hover,
+.btn-brown:hover {
+    background-color: #1a72cf;
+    /* color: #ac663e;
+    border : .1px solid #ac663e; */
+}
+
+.btn img {
+    width: 24px;
+    height: 24px;
+    /* margin-right: 0.5rem; */
+}
