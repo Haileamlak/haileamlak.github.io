@@ -14,7 +14,7 @@ html {
         "Segoe UI Symbol",
         "Noto Color Emoji";
 
-    /* border: .1px solid red */
+        /* border: .1px solid red */
 }
 
 body {
@@ -36,6 +36,13 @@ header {
     align-items: center;
     background-color: #FBF8EF;
     /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); */
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
 }
 
 /* small sized screen */

@@ -1,0 +1,54 @@
+/* import React from "react";
+import EducationCard from "./EducationCard";
+import './styles/Education.css';
+
+const Education=()=> {
+
+    return (<section id="education" className="education-section" > <h2 className="section-title" >Education</h2> <div className="education-list" > {
+            [ {
+                logo: "path/to/logo1.png",
+                degree: "Bachelor of Science in Computer Science",
+                institution: "University A",
+                location: "City, Country",
+                duration: "2015 - 2019",
+                description: "Description of the program and achievements."
+            }
+
+            ,
+            {
+            logo: "path/to/logo2.png",
+            degree: "Master of Science in Software Engineering",
+            institution: "University B",
+            location: "City, Country",
+            duration: "2019 - 2021",
+            description: "Description of the program and achievements."
+        }
+
+        ].map((education, index)=> (<EducationCard key= {
+                    index
+                }
+
+                education= {
+                    education
+                }
+
+                />))
+    }
+
+    </div> </section>);
+}
+
+;
+*/
+
+.education-section {
+    padding: 60px 0;
+    /* background-color: #f0f0f0; */
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 16px; */
+}
+   

@@ -2,16 +2,16 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import BackToTop from "./components/BackToTop";
-import Button from "./components/Button";
+import Education from "./components/Education";
 
 function App() {
     return (
         <>
             <Navbar />
-            <main style={{ paddingTop: '80px' }}>
+            <main >
                 <Hero />
                 <About />
-                {/* Projects, Experience, Contact coming next */}
+                <Education />
                 <BackToTop />
             </main>
         </>

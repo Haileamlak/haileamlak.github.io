@@ -6,12 +6,12 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = React.useState(false);
 
     const handleToggle = () => {
-        
+
         setMenuOpen(prev => !prev);
     };
 
     return (
-        <header className="navbar container">
+        <header className={"navbar" + (menuOpen ? ' open' : '')}>
             <div className="nav-left">
                 <a to="/" className="logo">
                     <img src="src/assets/avatar.png" alt="Logo" />
@@ -22,13 +22,13 @@ const Navbar = () => {
                     <a to="#experience" onClick={handleToggle}>Experience</a>
                     <a to="#projects" onClick={handleToggle}>Projects</a>
                     <a to="#skills" onClick={handleToggle}>Skills</a>
-                    <a to="#achievements" onClick={handleToggle}>Achievements</a>
+                    <a to="#extra" onClick={handleToggle}>Extra </a>
                     <a to="#contact" onClick={handleToggle}>Contact</a>
                 </nav>
             </div>
             <div className="nav-right">
                 <div className="nav-toggle">
-                    <img className="menu-icon" src={`src/assets/${menuOpen ? 'close' : 'menu'}-icon.png`} alt="Menu Icon" onClick={handleToggle} style={{ width: menuOpen ? 30 : 50, marginRight: menuOpen ? 9 : 0 }} />
+                    <img className="menu-icon" src={`src/assets/${menuOpen ? 'close' : 'menu'}-icon.png`} alt="Menu Icon" onClick={handleToggle} style={{ width: menuOpen ? 25 : 40, marginRight: menuOpen ? 6 : 0 }} />
                 </div>
             </div>
 
