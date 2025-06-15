@@ -4,7 +4,7 @@ import '../styles/Button.css';
 
 const Button = ({ text, onClick, imageSrc }) => {
     return (
-        <button className="btn btn-brown" onClick={onClick}>
+        <button className="btn btn-primary" onClick={onClick}>
             {imageSrc && <img src={imageSrc} alt="Arrow Icon" width={10} />}
             {text}
         </button>

@@ -54,12 +54,12 @@ const ContactModal = ({ isOpen, onClose }) => {
 
                 {!sentSuccess ? (
                     <>
-                        <h2>Contact Us</h2>
+                        <h2>Send a message</h2>
                         <form onSubmit={handleSubmit} className="contact-form">
                             <input type="text" name="name" placeholder="Your Name" required value={formData.name} onChange={handleChange} />
                             <input type="email" name="email" placeholder="Your Email" required value={formData.email} onChange={handleChange} />
                             <textarea name="message" placeholder="Your Message" required value={formData.message} onChange={handleChange} />
-                            <button type="submit" disabled={isSending} style={{ backgroundColor: isSending ? 'gray' : '#ff5500' }} className="submit-btn">
+                            <button type="submit" disabled={isSending} style={{ backgroundColor: isSending ? 'gray' : '#5C9B80' }} className="submit-btn">
                                 {isSending ? 'Sending...' : 'Send'}
                             </button>
                         </form>

@@ -1,19 +1,13 @@
 import '../styles/Navbar.css';
 import React from 'react';
-import Button from './Button';
 
 
 const Navbar = () => {
-    const [modalOpen, setModalOpen] = React.useState(false);
     const [menuOpen, setMenuOpen] = React.useState(false);
 
     const handleToggle = () => {
         
         setMenuOpen(prev => !prev);
-    };
-
-    const closeMenu = () => {
-        setMenuOpen(false);
     };
 
     return (

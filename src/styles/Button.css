@@ -1,7 +1,7 @@
 /* Button styles */
 .btn,
-.btn-brown {
-    background-color: #3674B5;
+.btn-primary {
+    background-color: #5C9B80;
     /* background-color: #D47E30; */
     color: white;
     border: none;
@@ -29,8 +29,8 @@
 }
 
 .btn:hover,
-.btn-brown:hover {
-    background-color: #1a72cf;
+.btn-primary:hover {
+    background-color: #51a07e;
     /* color: #ac663e;
     border : .1px solid #ac663e; */
 }
@@ -40,3 +40,19 @@
     height: 24px;
     /* margin-right: 0.5rem; */
 }
+
+/* @media screen and (max-width: 768px) {
+    .btn,
+    .btn-primary {
+        width: 100%;
+        padding: 1rem;
+        font-size: .8rem;
+    }
+
+    .btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    
+} */
