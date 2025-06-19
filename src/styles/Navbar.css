@@ -67,7 +67,7 @@
 .nav-links {
     display: flex;
     gap: 1.2rem;
-    background-color: #FBF8EF;
+    background-color: #E6F6F5;
 }
 
 .nav-links a {
@@ -110,7 +110,7 @@
         top: 75px;
         left: 0;
         right: 0;
-        background: #FBF8EF;
+        background: #E6F6F5;
         flex-direction: column;
         align-items: start;
         justify-content: space-around;

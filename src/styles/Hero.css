@@ -1,20 +1,14 @@
-/* 
-<section id="hero" className='container'><div className="hero-content"><h1 className='hero-title'>I'm <span style={{ color: ' #5C9B80' }}>Haileamlak Belachew</span></h1>
- <p className='hero-subtitle'>Software Engineer • Computer Science Graduate</p><p className='hero-description'>I'm currently building <a href="https://brownai3.web.app" target="_blank" rel="noopener noreferrer">BrownAI</a>, a company focused on AI solutions.</p>
- <div className='hero-buttons'><Button text="View Resume" onClick= {
-    ()=>window.open('https://drive.google.com/file/d/1rYu-mIcsTrAeCuH-xHPofrI1i1qNVzqO/view?pli=1', '_blank')
-}
 
-imageSrc="src/assets/resume-icon.png" /><OutlinedButton text="Contact Me" /></div></div></section> */
-
-/* Hero styles */
 #hero {
     /* padding: 100px 0; */
-    padding-top: 210px;
-    padding-bottom: 80px;
+    /* padding-top: 17%; */
+    /* padding-bottom: 80px; */
     text-align: start;
+    display: flex;
+    justify-content: start;
     width: 100%;
     height: 100vh;
+    min-height: 550px;
     background-image: url('src/assets/back2.jpg');
     background-size: cover;
     background-position: center;
@@ -24,12 +18,12 @@ imageSrc="src/assets/resume-icon.png" /><OutlinedButton text="Contact Me" /></di
 
 .hero-content {
     max-width: 650px;
-    margin: 0 0;
+    margin: auto 0;
     gap: 1rem;
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
+    /* justify-content: center; */
     /* background-color: rgba(255, 255, 255, 0.3); */
     /* padding: 2rem; */
     border-radius: 24px;
@@ -49,6 +43,7 @@ imageSrc="src/assets/resume-icon.png" /><OutlinedButton text="Contact Me" /></di
     left: 0;
     width: 100%;
     height: 100vh;
+    min-height: 550px;
     background: rgba(0, 0, 0, 0.4);
     /* darker overlay */
     z-index: 0;
@@ -96,10 +91,10 @@ imageSrc="src/assets/resume-icon.png" /><OutlinedButton text="Contact Me" /></di
 
 @media screen and (max-width: 768px) {
 
-    .hero-content {
-        /* max-width: 90%; */
-        /* padding: 1.5rem; */
-    }
+    /* #hero {
+        padding-top: 200px;
+        padding-bottom: 50px;
+    } */
 
     .hero-title {
         font-size: 2rem;
@@ -113,9 +108,14 @@ imageSrc="src/assets/resume-icon.png" /><OutlinedButton text="Contact Me" /></di
         font-size: 1rem;
     }
 
+}
+
+@media screen and (max-width: 480px) {
+
+
     .hero-buttons {
         flex-direction: column;
         align-items: start;
     }
-
+    
 }

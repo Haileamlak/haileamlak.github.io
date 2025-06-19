@@ -18,7 +18,7 @@ const EducationCard = ({ education }) => {
             <div className="education-description">
                 <ul>
                     {education.description.map((desc, index) => (
-                        <li key={index} className="education-description-item">{desc}</li>
+                        <li key={index} className="education-description-item" dangerouslySetInnerHTML={{ __html: desc }} />
                     ))}
                 </ul>
             </div>
