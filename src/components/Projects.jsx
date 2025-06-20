@@ -15,7 +15,7 @@ const Projects = () => {
             <div className='projects-cards'>
                 <ProjectCard
                     title="Brown AI's Website"
-                    description="A website showcasing Brown AI's services, including AI solutions, consulting, and training, with a focus on user experience and modern design."
+                    description="A website showcasing Brown AI's services, including its latest AI solutions."
                     imageUrl={brownaiImage}
                     link="https://brownai3.web.app"
                 />
