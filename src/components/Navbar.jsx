@@ -10,20 +10,33 @@ const Navbar = () => {
         setMenuOpen(prev => !prev);
     };
 
+    const handleLinkClick = (event) => {
+        // scroll a little bit to the top of the desired section
+        const targetId = event.target.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            // targetElement.scrollIntoView({ behavior: 'smooth' });
+            // scroll a little bit to the top of the section
+            // window.scrollBy(0, -150); // Adjust the value as needed to scroll a
+        }
+
+        setMenuOpen(false);
+    };
+
     return (
         <header className={"navbar" + (menuOpen ? ' open' : '')}>
             <div className="nav-left">
-                <a to="/" className="logo">
+                <a href="/" className="logo">
                     <img src="src/assets/avatar.png" alt="Logo" />
                 </a>
                 <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
-                    <a to="#about" onClick={handleToggle}>About</a>
-                    <a to="#education" onClick={handleToggle}>Education</a>
-                    <a to="#experience" onClick={handleToggle}>Experience</a>
-                    <a to="#projects" onClick={handleToggle}>Projects</a>
-                    <a to="#skills" onClick={handleToggle}>Skills</a>
-                    <a to="#extra" onClick={handleToggle}>Extra </a>
-                    <a to="#contact" onClick={handleToggle}>Contact</a>
+                    <a href='#about' onClick={handleLinkClick}>About</a>
+                    <a href='#education' onClick={handleLinkClick}>Education</a>
+                    <a href='#experience' onClick={handleLinkClick}>Experience</a>
+                    <a href='#projects' onClick={handleLinkClick}>Projects</a>
+                    <a href='#skills' onClick={handleLinkClick}>Skills</a>
+                    <a href='#extra' onClick={handleLinkClick}>Extra </a>
+                    <a href='#contact' onClick={handleLinkClick}>Contact</a>
                 </nav>
             </div>
             <div className="nav-right">

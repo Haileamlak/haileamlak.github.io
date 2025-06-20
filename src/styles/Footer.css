@@ -1,0 +1,55 @@
+/* import React from "react";
+
+import '../styles/Footer.css';
+
+const Footer=()=> {
+    return (<footer className="footer" > <div className="footer-content" > <p>2025 Haileamlak Belachew.</p> <div className="social-links" > <a href="https://www.linkedin.com/in/haileamlak" target="_blank" rel="noopener noreferrer" ><img src="src/assets/linkedin.png" alt="LinkedIn" /></a> <a href="https://github.com/haileamlak" target="_blank" rel="noopener noreferrer" ><img src="src/assets/github.png" alt="GitHub" /></a> <a href="https://github.com/haileamlak/haileamlak.github.io" target="_blank" rel="noopener noreferrer" ><img src="src/assets/github-star.png" alt="Github Star" /></a> </div> </div> </footer>);
+}
+*/
+
+
+/* styles */
+.footer {
+    background-color: #E6F6F5;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+.footer-content p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+}
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.social-links a {
+    text-decoration: none;
+    color: inherit;
+}
+.social-links img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+.social-links img:hover {
+    transform: scale(1.1);
+}
+.social-links img:active {
+    transform: scale(0.9);
+}
