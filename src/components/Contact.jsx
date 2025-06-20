@@ -4,6 +4,13 @@ import '../styles/Contact.css';
 import '../styles/main.css';
 import '../styles/ContactModal.css';
 
+import emailIcon from '../assets/email.png';
+import phoneIcon from '../assets/phone.png';
+import linkedinIcon from '../assets/linkedin.png';
+import githubIcon from '../assets/github.png';
+
+// import closeIcon from '../assets/close.png';
+
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -52,10 +59,10 @@ const Contact = () => {
                 <div className="contact-info">
                     <p className="contact-description">If you have any questions or just want to say hi, feel free to reach out!</p>
                     <div className="contact-address">
-                        <p><img src="src/assets/email.png" width={24} /> Email: <a href="mailto:haileamlak@gmail.com">haileamlak@gmail.com</a></p>
-                        <p><img src="src/assets/phone.png" width={24} /> Phone: <a href="tel:+251906397248">+251 906 397 248</a></p>
-                        <p><img src="src/assets/linkedin.png" width={24} /> LinkedIn: <a href="https://www.linkedin.com/in/haileamlak/" target="_blank" rel="noopener noreferrer">Haileamlak Belachew</a></p>
-                        <p><img src="src/assets/github.png" width={24} /> GitHub: <a href="https://www.github.com/haileamlak" target="_blank" rel="noopener noreferrer">Haileamlak</a></p>
+                        <p><img src={emailIcon} width={24} /> Email: <a href="mailto:haileamlak@gmail.com">haileamlak@gmail.com</a></p>
+                        <p><img src={phoneIcon} width={24} /> Phone: <a href="tel:+251906397248">+251 906 397 248</a></p>
+                        <p><img src={linkedinIcon} width={24} /> LinkedIn: <a href="https://www.linkedin.com/in/haileamlak/" target="_blank" rel="noopener noreferrer">Haileamlak Belachew</a></p>
+                        <p><img src={githubIcon} width={24} /> GitHub: <a href="https://www.github.com/haileamlak" target="_blank" rel="noopener noreferrer">Haileamlak</a></p>
                     </div>
                 </div>
                 <div className="contact-form-container">

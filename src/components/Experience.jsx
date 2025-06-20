@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/Experience.css";
 
+import linkIcon from "../assets/link.png"; // Adjust the path as necessary
+
 const Experience = () => {
     return (
         <section id="experience" className="experience-section container">
@@ -15,7 +17,7 @@ const Experience = () => {
                     <h3 className="experience-title">Head of Education</h3>
                     <p className="experience-company">
                         A2SV (Africa to Silicon Valley)
-                        <a href={"https://a2sv.org"} target="_blank" rel="noopener noreferrer" className="link-icon"><img src="src/assets/link.png" alt="Link" /></a>
+                        <a href={"https://a2sv.org"} target="_blank" rel="noopener noreferrer" className="link-icon"><img src={linkIcon} alt="Link" /></a>
 
                     </p>
                     <p className="experience-location">Addis Ababa, Ethiopia</p>
@@ -35,7 +37,7 @@ const Experience = () => {
                     <p className="experience-company">
                         {/* <img src="src/assets/agents4hire-banner.png" alt="Startup Logo" style={{ width: "100px" }} /> */}
                         Agents4Hire
-                        <a href={"https://agents4hire.ai"} target="_blank" rel="noopener noreferrer" className="link-icon"><img src="src/assets/link.png" alt="Link" /></a>
+                        <a href={"https://agents4hire.ai"} target="_blank" rel="noopener noreferrer" className="link-icon"><img src={linkIcon} alt="Link" /></a>
                     </p>
                     <p className="experience-location">San Francisco, Bay Area (Remote)</p>
                     <p className="experience-date">September 2024 - October 2024</p>
@@ -55,7 +57,7 @@ const Experience = () => {
                     <p className="experience-company">
                         {/* <img src="src/assets/agents4hire-banner.png" alt="Startup Logo" style={{ width: "100px" }} /> */}
                         A2SV (Africa to Silicon Valley)
-                        <a href={"https://a2sv.org"} target="_blank" rel="noopener noreferrer" className="link-icon"><img src="src/assets/link.png" alt="Link" /></a>
+                        <a href={"https://a2sv.org"} target="_blank" rel="noopener noreferrer" className="link-icon"><img src={linkIcon} alt="Link" /></a>
                     </p>
                     <p className="experience-location">Addis Ababa, Ethiopia</p>
                     <p className="experience-date">July 2024 - August 2024</p>

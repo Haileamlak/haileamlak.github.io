@@ -2,8 +2,9 @@ import '../styles/About.css';
 import BulletText from './BulletText';
 import Button from './Button'; 
 
-// import images
- 
+import githubIcon from '../assets/github.png';
+import linkedinIcon from '../assets/linkedin.png';
+
     
 const About = () => {
     return (
@@ -25,8 +26,8 @@ const About = () => {
 
                     </div>
                     <div className="about-links">
-                        <Button className="btn btn-primary" onClick={() => window.open("https://github.com/haileamlak", "_blank")} text={"GitHub"} imageSrc={"src/assets/github.png"} isIconAfter/>
-                        <Button className="btn btn-primary" onClick={() => window.open("https://www.linkedin.com/in/haileamlak", "_blank")} text={"LinkedIn"} imageSrc={"src/assets/linkedin.png"} isIconAfter/>
+                        <Button className="btn btn-primary" onClick={() => window.open("https://github.com/haileamlak", "_blank")} text={"GitHub"} imageSrc={githubIcon} isIconAfter/>
+                        <Button className="btn btn-primary" onClick={() => window.open("https://www.linkedin.com/in/haileamlak", "_blank")} text={"LinkedIn"} imageSrc={linkedinIcon} isIconAfter/>
                     </div>
 
                 </div>

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "../styles/BackToTop.css"; 
 
+import BackToTopIcon from "../assets/arrow-up.png"; // Adjust the path as necessary
+
 const BackToTop = () => {
     const [visible, setVisible] = useState(false);
 
@@ -18,7 +20,7 @@ const BackToTop = () => {
 
     return visible ? (
         <button onClick={scrollToTop} className="back-to-top">
-            <img src="src/assets/arrow-up.png" alt="Back to top" style={{ width: '24px', height: '24px' }} />
+            <img src={BackToTopIcon} alt="Back to top" style={{ width: '24px', height: '24px' }} />
         </button>
     ) : null;
 };

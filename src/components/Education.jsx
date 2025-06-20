@@ -2,6 +2,9 @@ import React from "react";
 import EducationCard from "./EducationCard";
 import '../styles/Education.css';
 
+import aauLogo from '../assets/aau-logo.png';
+import a2svLogo from '../assets/a2sv-logo.png';
+
 const Education = () => {
 
     return (
@@ -11,7 +14,7 @@ const Education = () => {
             <div className="education-list">
                 {[
                     {
-                        logo: "src/assets/aau-logo.png",
+                        logo: aauLogo,
                         institution: "Addis Ababa University",
                         degree: "Bachelor of Science in Computer Science",
                         location: "Addis Ababa, Ethiopia",
@@ -19,7 +22,7 @@ const Education = () => {
                         description: ["Graduated with great distinction from the top-ranked university in Ethiopia.", "Participated in various hackathons, projects, and internships that enhanced my skills in software development and problem-solving."]
                     },
                     {
-                        logo: 'src/assets/a2sv-logo.png',
+                        logo: a2svLogo,
                         institution: "A2SV (Africa to Silicon Valley)",
                         degree: "Advanced Software Engineering Training",
                         location: "Addis Ababa, Ethiopia",

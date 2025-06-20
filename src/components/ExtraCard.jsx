@@ -1,12 +1,12 @@
 import React from 'react';
 import '../styles/ExtraCard.css';
 
-
+import DefaultImage from '../assets/default-achievement.png'; // Adjust the path as necessary
 
 const ExtraCard = ({ title, date, description, imageUrl }) => {
     // If no image URL is provided, use a default image or leave it empty
     if (!imageUrl) {
-        imageUrl = "src/assets/default-avatar.png";
+        imageUrl = DefaultImage;
     }
     return (
         <div className="extra-card">

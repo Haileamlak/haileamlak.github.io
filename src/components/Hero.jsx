@@ -4,6 +4,7 @@ import Button from './Button';
 import OutlinedButton from './OutlinedButton';
 import ContactModal from './ContactModal';
 
+import resumeIcon from '../assets/resume-icon.png'; // Adjust the path as necessary
 
 const Hero = () => {
     const [modalOpen, setModalOpen] = React.useState(false);
@@ -18,7 +19,7 @@ const Hero = () => {
                 <p className='hero-subtitle'>CS Grad & Software Engineer</p>
                 <p className='hero-description'>● Currently building <a href="https://brownai3.web.app" target="_blank" rel="noopener noreferrer" style={{ color: '#c07a35', fontWeight: 'bold', }}>Brown AI</a>, a company focused on AI solutions.</p>
                 <div className='hero-buttons'>
-                    <Button text="View Resume" onClick={() => window.open('https://drive.google.com/file/d/1Cibn9LAeBq9kwJsgd1Bg7xFQvdqK9Suz/view?usp=sharing', '_blank')} imageSrc="src/assets/resume-icon.png" />
+                    <Button text="View Resume" onClick={() => window.open('https://drive.google.com/file/d/1Cibn9LAeBq9kwJsgd1Bg7xFQvdqK9Suz/view?usp=sharing', '_blank')} imageSrc={resumeIcon} />
                     <OutlinedButton text="Contact Me" onClick={toggleModal} />
                 </div>
             </div>

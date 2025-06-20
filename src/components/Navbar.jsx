@@ -1,6 +1,9 @@
 import '../styles/Navbar.css';
 import React from 'react';
 
+import avatar from '../assets/avatar.png'; // Adjust the path as necessary
+import menuIcon from '../assets/menu-icon.png'; // Adjust the path as necessary
+import closeIcon from '../assets/close-icon.png'; // Adjust the path as necessary
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = React.useState(false);
@@ -27,7 +30,7 @@ const Navbar = () => {
         <header className={"navbar" + (menuOpen ? ' open' : '')}>
             <div className="nav-left">
                 <a href="/" className="logo">
-                    <img src="src/assets/avatar.png" alt="Logo" />
+                    <img src={avatar} alt="Logo" />
                 </a>
                 <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
                     <a href='#about' onClick={handleLinkClick}>About</a>
@@ -41,7 +44,7 @@ const Navbar = () => {
             </div>
             <div className="nav-right">
                 <div className="nav-toggle">
-                    <img className="menu-icon" src={`src/assets/${menuOpen ? 'close' : 'menu'}-icon.png`} alt="Menu Icon" onClick={handleToggle} style={{ width: menuOpen ? 25 : 40, marginRight: menuOpen ? 6 : 0 }} />
+                    <img className="menu-icon" src={menuOpen ? closeIcon : menuIcon} alt="Menu Icon" onClick={handleToggle} style={{ width: menuOpen ? 25 : 40, marginRight: menuOpen ? 6 : 0 }} />
                 </div>
             </div>
 
