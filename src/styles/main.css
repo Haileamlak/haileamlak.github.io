@@ -18,6 +18,22 @@
     font-weight: 500;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/quicksand/static/Quicksand-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/quicksand/static/Quicksand-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
