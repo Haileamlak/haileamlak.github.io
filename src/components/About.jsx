@@ -2,6 +2,9 @@ import '../styles/About.css';
 import BulletText from './BulletText';
 import Button from './Button'; 
 
+// import images
+ 
+    
 const About = () => {
     return (
         <section id="about" className="about-section container">
