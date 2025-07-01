@@ -21,7 +21,7 @@ const Experience = () => {
 
                     </p>
                     <p className="experience-location">Addis Ababa, Ethiopia</p>
-                    <p className="experience-date">January 2025 - Present</p>
+                    <p className="experience-date">January 2025 - June 2025</p>
                     <ul className="experience-description">
                         <li>Led structured practice sessions and delivered in-depth lectures on data structures and algorithms to 30+ students, covering
                             topics like dynamic programming.
