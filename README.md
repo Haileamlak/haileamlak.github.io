@@ -25,7 +25,7 @@ A personal portfolio website showcasing my skills, projects, education, and prof
 ## Tech Stack
 
 - **Languages**: HTML, CSS, JavaScript
-- **Tools**: Git, VS Code, GitHub Pages (for deployment)
+- **Tools**: Git, VS Code, GitHub Pages and Firebase Hosting (for deployment)
 
 ## Sections
 
@@ -37,7 +37,7 @@ A personal portfolio website showcasing my skills, projects, education, and prof
 6. **Education**: Information about my academic background, including the degree and university.
 7. **Get in Touch**: A section where users can find links to my social profiles and contact details.
 8. **Footer**: A simple footer with copyright information.
-
+<!--
 ## Installation
 
 1. Clone the repository to your local machine:
