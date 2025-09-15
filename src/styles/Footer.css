@@ -10,7 +10,7 @@ const Footer=()=> {
 
 /* styles */
 .footer {
-    background-color: #E6F6F5;
+    background-color: #F6F6F6;
     padding: 1.5rem 0;
     text-align: center;
     font-size: 1rem;

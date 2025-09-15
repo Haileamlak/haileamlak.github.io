@@ -24,10 +24,11 @@ const Education = () => {
                     {
                         logo: a2svLogo,
                         institution: "A2SV (Africa to Silicon Valley)",
-                        degree: "Advanced Software Engineering Training",
+                        degree: "Data Structures & Algorithms",
                         location: "Addis Ababa, Ethiopia",
                         duration: "Nov. 2023 - Dec. 2024",
-                        description: ["Joined a Google-backed tech academy that has upskilled 1000+ top African students, with 100+ securing software engineering roles at top-tier companies like Google and Bloomberg within 6 years",
+                        description: [
+                            // "Joined a Google-backed tech academy that has upskilled 1000+ top African students, with 100+ securing software engineering roles at top-tier companies like Google and Bloomberg within 6 years",
                             "Completed 1000+ hours of intensive training in data structures & algorithms, solving 1000+ algorithmic problems on <a target='_blank' href='https://leetcode.com/u/Hayla_Beat' style='color: #5C9B80; font-weight: bold;'>LeetCode</a> and <a target='_blank' href='https://codeforces.com/profile/_foo_' style='color: #5C9B80; font-weight: bold;'>CodeForces</a> combined."]
                     }
                 ].map((education, index) => (

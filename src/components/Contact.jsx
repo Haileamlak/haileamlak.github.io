@@ -59,7 +59,7 @@ const Contact = () => {
                 <div className="contact-info">
                     <p className="contact-description">If you have any questions or just want to say hi, feel free to reach out!</p>
                     <div className="contact-address">
-                        <p><img src={emailIcon} width={24} /> Email: <a href="mailto:haileamlak@gmail.com">haileamlak@gmail.com</a></p>
+                        <p><img src={emailIcon} width={24} /> Email: <a href="mailto:haileamlakbeat@gmail.com">haileamlakbeat@gmail.com</a></p>
                         <p><img src={phoneIcon} width={24} /> Phone: <a href="tel:+251906397248">+251 906 397 248</a></p>
                         <p><img src={linkedinIcon} width={24} /> LinkedIn: <a href="https://www.linkedin.com/in/haileamlak/" target="_blank" rel="noopener noreferrer">Haileamlak Belachew</a></p>
                         <p><img src={githubIcon} width={24} /> GitHub: <a href="https://www.github.com/haileamlak" target="_blank" rel="noopener noreferrer">Haileamlak</a></p>

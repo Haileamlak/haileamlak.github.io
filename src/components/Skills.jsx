@@ -48,13 +48,13 @@ export const Skills = () => {
                 <SkillCard imageUrl={cppIcon} text='C++' />
                 {/* <SkillCard imageUrl='src/assets/dart.png' text='Dart' /> */}
                 <SkillCard imageUrl={javaIcon} text='Java' />
-                <SkillCard imageUrl={typescriptIcon} text='TypeScript' />
+                {/* <SkillCard imageUrl={typescriptIcon} text='TypeScript' /> */}
                 <SkillCard imageUrl={htmlIcon} text='HTML' />
                 <SkillCard imageUrl={cssIcon} text='CSS' />
             </div>
-            <h2 style={{ fontWeight: 400 }}><img src={arrowIcon} width={24} /> Frameworks & Libraries</h2>
+            {/* <h2 style={{ fontWeight: 400 }}><img src={arrowIcon} width={24} /> Frameworks & Libraries</h2> */}
 
-            <div className='skills-cards'>
+            {/* <div className='skills-cards'>
 
                 <SkillCard imageUrl={reactIcon} text='React' />
                 <SkillCard imageUrl={flutterIcon} text='Flutter' />
@@ -63,7 +63,7 @@ export const Skills = () => {
                 <SkillCard imageUrl={flaskIcon} text='Flask' />
                 <SkillCard imageUrl={bootstrapIcon} text='Bootstrap' />
 
-            </div>
+            </div> */}
             <h2 style={{ fontWeight: 400 }}><img src={arrowIcon} width={24} /> Databases</h2>
             <div className='skills-cards'>
                 <SkillCard imageUrl={mongodbIcon} text='MongoDB' />
@@ -73,8 +73,8 @@ export const Skills = () => {
             </div>
             <h2 style={{ fontWeight: 400 }}><img src={arrowIcon} width={24} /> Tools & Technologies</h2>
             <div className='skills-cards'>
-                <SkillCard imageUrl={dockerIcon} text='Docker' />
-                <SkillCard imageUrl={kubernetesIcon} text='Kubernetes' />
+                {/* <SkillCard imageUrl={dockerIcon} text='Docker' />
+                <SkillCard imageUrl={kubernetesIcon} text='Kubernetes' /> */}
                 <SkillCard imageUrl={gcpIcon} text='GCP' />
                 <SkillCard imageUrl={figmaIcon} text='Figma' />
                 <SkillCard imageUrl={postmanIcon} text='Postman' />

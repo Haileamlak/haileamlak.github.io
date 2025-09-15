@@ -13,14 +13,14 @@ const Projects = () => {
         <section id='projects' className='projects-section container'>
             <h2 className='section-title'>Featured Projects</h2>
             <div className='projects-cards'>
-                <ProjectCard
+                {/* <ProjectCard
                     title="Brown AI's Website"
                     description="A website showcasing Brown AI's services, including its latest AI solutions."
                     imageUrl={brownaiImage}
                     link="https://brownai3.web.app"
-                />
+                /> */}
                 <ProjectCard 
-                    title="Content Creator Assistant" 
+                    title="Content Creator Assistant AI" 
                     description="AI assistant that automates content creation and social media management using generative AI." 
                     imageUrl={aiAgentImage} 
                     link="https://github.com/haileamlak/ai-content-creator-agent" 
@@ -33,7 +33,7 @@ const Projects = () => {
                 />
                 <ProjectCard 
                     title="MK Tube" 
-                    description="a live and on-demand video streaming mobile application for <a target='_blank' href='https://youtube.com/@EOTCMK' style='color: green;'>Mahibere Kidusan Tv</a>." 
+                    description="a live and on-demand video streaming mobile application for a TV Channel." // <a target='_blank' href='https://youtube.com/@EOTCMK' style='color: green;'>Mahibere Kidusan Tv</a>
                     imageUrl={mkTubeImage} 
                     link="https://github.com/haileamlak/mk-tube-video-streaming" 
                 />

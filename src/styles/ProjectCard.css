@@ -3,7 +3,7 @@
 .project-card {
     display: flex;
     flex-direction: column;
-    background-color: #E6F6F5;
+    background-color: #F6F6F6;
         border-radius: 12px;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     overflow: ellipsis;
@@ -39,7 +39,8 @@
 }
 
 .project-card-image {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     height: 220px;
     object-fit: cover;
     border-radius: 5px;

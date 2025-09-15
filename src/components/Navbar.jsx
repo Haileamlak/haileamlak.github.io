@@ -1,7 +1,7 @@
 import '../styles/Navbar.css';
 import React from 'react';
 
-import avatar from '../assets/avatar.png'; // Adjust the path as necessary
+import avatar from '../assets/avatar-2.png'; // Adjust the path as necessary
 import menuIcon from '../assets/menu-icon.png'; // Adjust the path as necessary
 import closeIcon from '../assets/close-icon.png'; // Adjust the path as necessary
 
