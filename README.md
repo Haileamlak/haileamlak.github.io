@@ -2,16 +2,6 @@
 
 A personal portfolio website showcasing my skills, projects, education, and professional experience. This website is fully responsive and includes various sections such as "About Me", "Skills", "Projects", "Experience", "Education", and a "Get in Touch" section.
 
-## Table of Contents
-
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Sections](#sections)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features
 
 - **Responsive Design**: Optimized for both desktop and mobile devices.
