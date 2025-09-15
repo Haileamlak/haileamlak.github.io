@@ -4,7 +4,7 @@ import Button from './Button';
 
 import githubIcon from '../assets/github.png';
 import linkedinIcon from '../assets/linkedin.png';
-
+import backIMage from '../assets/about-image-3.png';
     
 const About = () => {
     return (
@@ -12,7 +12,7 @@ const About = () => {
             <h2 className='section-title'>About Me</h2>
             <div className="about-content">
                 <div className="about-image-container">
-                <img src="src/assets/about-image-3.png" alt="Haileamlak Belachew" className="about-image" />
+                <img src={backIMage} alt="Haileamlak Belachew" className="about-image" />
                 </div>
                 <div className="about-details">
                     <div className="about-text">
