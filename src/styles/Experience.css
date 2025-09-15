@@ -10,26 +10,32 @@
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    gap: 1.5rem;
-    /* border-left: 4px solid #51a07e; */
+    border-left: 4px solid #51a07e;
+    gap: 2.5rem;
     /* margin-left: 1.5rem; */
 }
 
 .experience-item {
     /* background-color: #fff; */
-    border-radius: 8px;
+    border-radius: 28px;
     padding: 0 1.5rem;
+    border-left: 1px solid #51a07e;
+    border-bottom: 1px solid #51a07e;
+    border-top: 5px solid #51a07e;
+    border-right: 5px solid #51a07e;
+margin-left: 10px;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .experience-dot {
     position: relative;
-    left: -25px;
+    left: -44px;
     top: 25px;
     width: 15px;
     height: 15px;
     background-color: #51a07e;
     border-radius: 50%;
+    /* display: none; */
     /* margin-right: 4rem; */
 }
 
