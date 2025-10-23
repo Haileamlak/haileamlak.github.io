@@ -17,7 +17,7 @@ const Extra = () => {
                 <ExtraCard
                     title="1st Place in Hackathon"
                     // date="June 2023"
-                    description="Secured 1st place competing against 20+ students by developing a live and on-demand video streaming platform for a TV Channel." // <a target='_blank' href='https://www.youtube.com/@EOTCMK' style='color: green;display:inline-block;'>Mahibere Kidusan Tv</a>
+                    description="Secured 1st place in a hackathon competing against 20+ students by developing a live and on-demand video streaming platform for a TV Channel." // <a target='_blank' href='https://www.youtube.com/@EOTCMK' style='color: green;display:inline-block;'>Mahibere Kidusan Tv</a>
                     imageUrl={mkIctLogo}
                 />
                 <ExtraCard

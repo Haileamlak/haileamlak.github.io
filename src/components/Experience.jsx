@@ -62,7 +62,7 @@ const Experience = () => {
                     <p className="experience-company">
                         {/* <img src="src/assets/agents4hire-banner.png" alt="Startup Logo" style={{ width: "100px" }} /> */}
                         Stealth AI Startup
-                        <a href={"https://agents4hire.ai"} target="_blank" rel="noopener noreferrer" className="link-icon"><img src={linkIcon} alt="Link" /></a>
+                        {/* <a href={"https://agents4hire.ai"} target="_blank" rel="noopener noreferrer" className="link-icon"><img src={linkIcon} alt="Link" /></a> */}
                     </p>
                     <p className="experience-location">San Francisco, Bay Area (Remote)</p>
                     <p className="experience-date">September 2024 - October 2024</p>
