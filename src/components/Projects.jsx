@@ -20,10 +20,16 @@ const Projects = () => {
                     link="https://brownai3.web.app"
                 /> */}
                 <ProjectCard 
-                    title="Content Creator Assistant AI" 
-                    description="AI assistant that automates content creation and social media management using generative AI." 
+                    title="Content Creation Automation AI" 
+                    description="AI tool that automates content creation and social media management using generative AI." 
                     imageUrl={aiAgentImage} 
                     link="https://github.com/haileamlak/ai-content-creator-agent" 
+                />
+                 <ProjectCard 
+                    title="MK Tube Video Streaming App" 
+                    description="a live and on-demand video streaming mobile application for a TV Channel." // <a target='_blank' href='https://youtube.com/@EOTCMK' style='color: green;'>Mahibere Kidusan Tv</a>
+                    imageUrl={mkTubeImage} 
+                    link="https://github.com/haileamlak/mk-tube-video-streaming" 
                 />
                 <ProjectCard 
                     title="Blog API " 
@@ -31,14 +37,9 @@ const Projects = () => {
                     imageUrl={blogApiImage} 
                     link="https://github.com/haileamlak/blog-api" 
                 />
-                <ProjectCard 
-                    title="MK Tube" 
-                    description="a live and on-demand video streaming mobile application for a TV Channel." // <a target='_blank' href='https://youtube.com/@EOTCMK' style='color: green;'>Mahibere Kidusan Tv</a>
-                    imageUrl={mkTubeImage} 
-                    link="https://github.com/haileamlak/mk-tube-video-streaming" 
-                />
+               
                 <ProjectCard
-                    title="Finote"
+                    title="Finote Bus Ticketing App"
                     description="A mobile app revolutionizing bus travel in Ethiopia by enabling easy ticket purchases, secure payments, and real-time schedule management for travelers and operators."
                     imageUrl={finoteImage}
                     link="https://github.com/haileamlak/finote"

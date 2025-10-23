@@ -14,6 +14,31 @@ const Experience = () => {
                     {/* <div className="experience-banner">
                         <img src="src/assets/a2sv-banner.png" alt="Tech Company Logo" />
                     </div> */}
+                    <h3 className="experience-title">Software Engineer - Backend</h3>
+                    <p className="experience-company">
+                        EagleLion System Technology
+                        <a href={"https://eaglelionsystems.com"} target="_blank" rel="noopener noreferrer" className="link-icon"><img src={linkIcon} alt="Link" /></a>
+
+                    </p>
+                    <p className="experience-location">Addis Ababa, Ethiopia</p>
+                    <p className="experience-date">July 2025 - Present</p>
+                    <ul className="experience-description">
+                        <li>Contributed to the development of a super app for one of Ethiopia’s largest banks, designed to serve millions of users with
+                            services such as payments, transfers, and marketplace integrations.
+                        </li>
+                        <li>Improved inter-microservice communication by migrating to gRPC, reducing latency and cutting payload size compared to
+                            REST.</li>
+                        <li>Set up service-level logging, improving system reliability and reducing error diagnosis time from several hours to few
+                            minutes.</li>
+                    </ul>
+
+                </div>
+                <div className="experience-item">
+                    <div className="experience-dot"></div>
+
+                    {/* <div className="experience-banner">
+                        <img src="src/assets/a2sv-banner.png" alt="Tech Company Logo" />
+                    </div> */}
                     <h3 className="experience-title">Head of Education</h3>
                     <p className="experience-company">
                         A2SV (Africa to Silicon Valley)
@@ -36,7 +61,7 @@ const Experience = () => {
                     <h3 className="experience-title">Software Engineer</h3>
                     <p className="experience-company">
                         {/* <img src="src/assets/agents4hire-banner.png" alt="Startup Logo" style={{ width: "100px" }} /> */}
-                        Agents4Hire
+                        Stealth AI Startup
                         <a href={"https://agents4hire.ai"} target="_blank" rel="noopener noreferrer" className="link-icon"><img src={linkIcon} alt="Link" /></a>
                     </p>
                     <p className="experience-location">San Francisco, Bay Area (Remote)</p>
@@ -45,17 +70,16 @@ const Experience = () => {
                     <ul className="experience-description">
 
                         <li>Built core backend features enabling users to create customized AI agents tailored to their own specific needs.
-                            </li>
-                        <li>Reduced agent creation failure rate from 70% to 5% by addressing hallucination issues in generative AI API calls.
                         </li>
+                        {/* <li>Reduced agent creation failure rate from 70% to 5% by addressing hallucination issues in generative AI API calls.
+                        </li> */}
                         <li>Expanded agent functionality and automation capabilities by integrating diverse third-party APIs.</li>
                     </ul>
                 </div>
-                <div className="experience-item">
+                {/* <div className="experience-item">
                     <div className="experience-dot"></div>
                     <h3 className="experience-title">Back-end Developer Intern</h3>
                     <p className="experience-company">
-                        {/* <img src="src/assets/agents4hire-banner.png" alt="Startup Logo" style={{ width: "100px" }} /> */}
                         A2SV (Africa to Silicon Valley)
                         <a href={"https://a2sv.org"} target="_blank" rel="noopener noreferrer" className="link-icon"><img src={linkIcon} alt="Link" /></a>
                     </p>
@@ -71,7 +95,7 @@ const Experience = () => {
                         </li>
                         <li>Accelerated development workflows by setting up automated CI/CD pipelines with GitHub Actions.</li>
                     </ul>
-                </div>
+                </div> */}
             </div>
         </section>
     );

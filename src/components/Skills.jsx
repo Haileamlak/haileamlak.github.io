@@ -44,8 +44,8 @@ export const Skills = () => {
             <div className='skills-cards'>
                 <SkillCard imageUrl={pythonIcon} text='Python' />
                 <SkillCard imageUrl={goIcon} text='Go' />
-                <SkillCard imageUrl={javascriptIcon} text='JavaScript' />
                 <SkillCard imageUrl={cppIcon} text='C++' />
+                <SkillCard imageUrl={javascriptIcon} text='JavaScript' />
                 {/* <SkillCard imageUrl='src/assets/dart.png' text='Dart' /> */}
                 <SkillCard imageUrl={javaIcon} text='Java' />
                 {/* <SkillCard imageUrl={typescriptIcon} text='TypeScript' /> */}
@@ -78,8 +78,8 @@ export const Skills = () => {
                 <SkillCard imageUrl={gcpIcon} text='GCP' />
                 <SkillCard imageUrl={figmaIcon} text='Figma' />
                 <SkillCard imageUrl={postmanIcon} text='Postman' />
-                <SkillCard imageUrl={gitIcon} text='Git' />
-                <SkillCard imageUrl={githubIcon} text='GitHub' />
+                {/* <SkillCard imageUrl={gitIcon} text='Git' /> */}
+                {/* <SkillCard imageUrl={githubIcon} text='GitHub' /> */}
 
             </div>
         </section>

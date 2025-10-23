@@ -10,10 +10,10 @@ const About = () => {
     return (
         <section id="about" className="about-section container">
             <h2 className='section-title'>About Me</h2>
-            <div className="about-content">
-                <div className="about-image-container">
+            {/* <div className="about-content"> */}
+                {/* <div className="about-image-container">
                 <img src={backIMage} alt="Haileamlak Belachew" className="about-image" />
-                </div>
+                </div> */}
                 <div className="about-details">
                     <div className="about-text">
 
@@ -31,7 +31,7 @@ const About = () => {
                     </div> */}
 
                 </div>
-            </div>
+            {/* </div> */}
         </section>
     );
 };
