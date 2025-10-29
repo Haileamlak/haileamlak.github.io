@@ -54,9 +54,12 @@ html {
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #F6F6F6;
+
+    /* background-color: #ffffff; */
     color: #000;
     line-height: 1.6;
+    padding: 0 20%;
 }
 
 .container {
@@ -84,11 +87,15 @@ header {
 }
 
 /* small sized screen */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     .container {
         padding-left: 8%;
         padding-right: 8%;
+    }
+
+    body {
+        padding: 0;
     }
 }
 

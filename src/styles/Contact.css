@@ -15,8 +15,8 @@ export default Contact; */
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding: 90px 0;
-    background-color: #F6F6F6;
+    padding: 0px 0 90px ;
+    background-color: #fff;
 }
 
 .contact-content {

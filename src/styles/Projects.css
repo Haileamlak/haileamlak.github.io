@@ -3,15 +3,18 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding: 90px 0;
+    padding: 0px 0 90px ;
+
         /* background-color: #B2B2B2; */
+    background-color: #fff;
+
 }
 
 
 .projects-cards {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     gap: 1.7rem;
     justify-content: left;
     margin-bottom: 1rem;
