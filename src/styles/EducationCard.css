@@ -52,13 +52,13 @@
 .education-institution {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #333;
+    color: #E5E5E5;
     margin-bottom: 4px;
 }
 
 .education-degree {
     font-size: 1.1rem;
-    color: #555;
+    color: #E5E5E5;
     margin: 0;
     font-weight: 600;
     font-style: italic;
@@ -66,20 +66,20 @@
 
 .education-location {
     font-size: 0.9rem;
-    color: #777;
+    color: #E5E5E5;
 }
 
 .education-duration {
     font-size: 0.9rem;
     font-style: italic;
-    color: #777;
+    color: #E5E5E5;
     margin-top: 4px;
 
 }
 
 .education-description {
     font-size: 1.1rem;
-    color: #333;
+    color: #E5E5E5;
     line-height: 1.6;
     margin-top: 8px;
     display: flex;

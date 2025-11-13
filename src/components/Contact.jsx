@@ -62,7 +62,7 @@ const Contact = () => {
                         <p><img src={emailIcon} width={24} /> Email: <a href="mailto:haileamlakbeat@gmail.com">haileamlakbeat@gmail.com</a></p>
                         {/* <p><img src={phoneIcon} width={24} /> Phone: <a href="tel:+251906397248">+251 906 397 248</a></p> */}
                         <p><img src={linkedinIcon} width={24} /> LinkedIn: <a href="https://www.linkedin.com/in/haileamlak/" target="_blank" rel="noopener noreferrer">linkedin.com/in/haileamlak</a></p>
-                        <p><img src={githubIcon} width={24} /> GitHub: <a href="https://www.github.com/haileamlak" target="_blank" rel="noopener noreferrer">github.com/Haileamlak</a></p>
+                        <p><img src={githubIcon} width={24} style={{background: "white", borderRadius: "50%"}}/> GitHub: <a href="https://www.github.com/haileamlak" target="_blank" rel="noopener noreferrer">github.com/Haileamlak</a></p>
                     </div>
                 </div>
                 <div className="contact-form-container">

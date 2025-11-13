@@ -16,7 +16,12 @@ export default Contact; */
     align-items: start;
     justify-content: center;
     padding: 0px 0 90px ;
-    background-color: #fff;
+    background-color: #000000;
+    color: #E5E5E5;
+}
+
+.contact-section h2 {
+    color: #E5E5E5;
 }
 
 .contact-content {
@@ -41,7 +46,7 @@ export default Contact; */
 }
 .contact-description {
     font-size: 1.4rem;
-    color: #333;
+    color: #E5E5E5;
     margin-bottom: 1.5rem;
     /* max-width: 600px; */
 }
@@ -52,7 +57,7 @@ export default Contact; */
     justify-content: space-between;
     gap: 1rem;
     font-size: 1.2rem;
-    color: #333;
+    color: #E5E5E5;
 }
 
 .contact-address {
@@ -66,7 +71,7 @@ export default Contact; */
 
 .contact-address p {
     font-size: 1.2rem;
-    color: #333;
+    color: #E5E5E5;
     display: flex;
     align-items: center;
     gap: 0.5rem;

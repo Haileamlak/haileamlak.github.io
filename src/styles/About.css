@@ -1,6 +1,6 @@
 .about-section {
     padding: 0px 0 90px ;
-    background-color: #fff;
+    background-color: #000;
     /* color:white; */
     /* background-image: url('src/assets/background2.jpg'); */
     background-repeat: no-repeat;
@@ -58,6 +58,8 @@
     align-items: space-between;
     justify-content: center;
     /* gap: 10px; */
+    color: #CCC8C8;
+
 }
 
 .about-text a {
@@ -89,7 +91,7 @@
 
 .about-links .btn-primary  {
     border-radius: 50px;
-    background-color: #fff;
+    background-color: #262626;
     color: #116466;
     /* border: 1px solid #116466; */
 }

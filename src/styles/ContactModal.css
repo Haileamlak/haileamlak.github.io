@@ -12,7 +12,7 @@
 }
 
 .modal {
-    background: white;
+    background-color: #262626;
     padding: 2rem;
     border-radius: 12px;
     width: 90%;
@@ -28,6 +28,7 @@
     border: none;
     font-size: 2.5rem;
     cursor: pointer;
+    color: #E5E5E5;
 }
 
 .contact-form {
@@ -39,13 +40,22 @@
 .contact-form input,
 .contact-form textarea {
     padding: 0.75rem;
-    border: 1px solid #ddd;
+    border: 1px solid #000;
     border-radius: 6px;
     font-size: 1rem;
+    background-color: #000;
+    color: #E5E5E5;
 }
 .contact-form textarea{
     min-height: 100px;
     min-width: 100%;
+}
+
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid #5C9B80;
+    box-shadow: 0 0 0 3px rgba(92,155,128,0.15);
+    /* border-color:none; */
 }
 
 .contact-form button {

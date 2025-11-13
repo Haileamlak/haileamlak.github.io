@@ -40,7 +40,7 @@ export const Skills = () => {
         <section id="skills" className='skills-section container'>
             <h2 className="section-title">Skills</h2>
 
-            <h2 style={{ fontWeight: 400 }}><img src={arrowIcon} width={24} /> Languages</h2>
+            <h2 style={{ fontWeight: 400, color: "#fff" }}><img src={arrowIcon} width={24}  style={{background: 'white'}}  /> Languages</h2>
             <div className='skills-cards'>
                 <SkillCard imageUrl={pythonIcon} text='Python' />
                 <SkillCard imageUrl={goIcon} text='Go' />
@@ -52,7 +52,7 @@ export const Skills = () => {
                 <SkillCard imageUrl={htmlIcon} text='HTML' />
                 <SkillCard imageUrl={cssIcon} text='CSS' />
             </div>
-            {/* <h2 style={{ fontWeight: 400 }}><img src={arrowIcon} width={24} /> Frameworks & Libraries</h2> */}
+            {/* <h2 style={{ fontWeight: 400, color: "#fff" }}><img src={arrowIcon} width={24}  style={{background: 'white'}} /> Frameworks & Libraries</h2> */}
 
             {/* <div className='skills-cards'>
 
@@ -64,14 +64,14 @@ export const Skills = () => {
                 <SkillCard imageUrl={bootstrapIcon} text='Bootstrap' />
 
             </div> */}
-            <h2 style={{ fontWeight: 400 }}><img src={arrowIcon} width={24} /> Databases</h2>
+            <h2 style={{ fontWeight: 400, color: "#fff" }}><img src={arrowIcon} width={24}  style={{background: 'white'}} /> Databases</h2>
             <div className='skills-cards'>
                 <SkillCard imageUrl={mongodbIcon} text='MongoDB' />
                 <SkillCard imageUrl={mysqlIcon} text='MySQL' />
                 <SkillCard imageUrl={firestoreIcon} text='Firestore' />
                 <SkillCard imageUrl={redisIcon} text='Redis' />
             </div>
-            <h2 style={{ fontWeight: 400 }}><img src={arrowIcon} width={24} /> Tools & Technologies</h2>
+            <h2 style={{ fontWeight: 400, color: "#fff" }}><img src={arrowIcon} width={24}  style={{background: 'white'}} /> Tools & Technologies</h2>
             <div className='skills-cards'>
                 {/* <SkillCard imageUrl={dockerIcon} text='Docker' />
                 <SkillCard imageUrl={kubernetesIcon} text='Kubernetes' /> */}

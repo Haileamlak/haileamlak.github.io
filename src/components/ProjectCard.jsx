@@ -25,9 +25,11 @@ const ProjectCard = ({ title, description, imageUrl, link }) => {
         </h3>
         {/* description contains html elements */}
         <div
-          className="project-card-description-html"
-          dangerouslySetInnerHTML={{ __html: description }}
-        />
+          className="project-card-description"
+          // dangerouslySetInnerHTML={{ __html: description }}
+        >
+        {description}
+    </div>
       </div>
     </span>
   );

@@ -9,7 +9,7 @@ import backIMage from '../assets/about-image-3.png';
 const About = () => {
     return (
         <section id="about" className="about-section container">
-            <h2 className='section-title'>Short Bio</h2>
+            <h2 className='section-title'>About Me</h2>
             {/* <div className="about-content"> */}
                 {/* <div className="about-image-container">
                 <img src={backIMage} alt="Haileamlak Belachew" className="about-image" />

@@ -8,7 +8,7 @@
     /* max-width: 600px; */
     min-width: 250px;
     /* box-sizing: border-box; */
-    /* background-color: #F6F6F6; */
+    background-color: #262626;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     /* border: 1px solid #F6F6F6; */
 }
@@ -49,6 +49,7 @@
     flex-direction: row;
     gap: 8px;
     align-items: end;
+    color: #CCC8C8;
 
 }
 
