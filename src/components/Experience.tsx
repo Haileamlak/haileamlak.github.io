@@ -4,7 +4,7 @@ import a2svLogo from '@/assets/a2sv-logo.png'
 const Experience = () => {
   const experiences = [
     {
-      title: "Software Engineer - Backend",
+      title: "Software Engineer",
       company: "EagleLion System Technology",
       companyUrl: "https://eaglelionsystems.com",
       location: "Addis Ababa, Ethiopia",
