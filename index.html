@@ -1,33 +1,93 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#D8C5A5" />
+    <meta name="description" content="Haileamlak Belachew is a software engineer interested in research for AI in Ethiopia and building software with meaningful impact." />
+    <title>Haileamlak Belachew</title>
+    <link rel="icon" type="image/png" href="assets/goatt.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Haileamlak Belachew, home">Haileamlak<span>.</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Projects</a>
+        <!-- <a href="#research">Research</a> -->
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme"><span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">Dark mode</span></button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span></button>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Projects</a><a href="#research">Research</a><a href="#contact">Contact</a>
+    </nav>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/src/assets/right-down.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haileamlak Belachew - Software Engineer</title>
-  <meta name="description"
-    content="CS Graduate and Software Engineer specializing in scalable backend systems with Golang and Python" />
-  <meta name="author" content="Haileamlak Belachew" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <main id="main">
+      <section class="hero section-pad" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Software Engineer <i>·</i> CS Graduate <i>·</i> Goat</p>
+          <h1><span>Haileamlak</span> Belachew</h1>
+          <p class="hero-intro">I’m a software engineer interested in AI research in  and in building technology that creates meaningful impact. I enjoy working across product and engineering, from practical AI to reliable digital systems.</p>
 
-  <meta property="og:title" content="Haileamlak Belachew - Software Engineer" />
-  <meta property="og:description"
-    content="CS Graduate and Software Engineer specializing in scalable AI and backend systems" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:image" content="/preview.png" />
-  <meta property="og:url" content="https://haileamlak.tech" />
+          <div class="button-row"><a class="button button-dark" href="#work">Explore my projects <span aria-hidden="true">↘</span></a><a class="button button-outline" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-facts"><div><span class="fact-label">Based in</span><strong>Addis Ababa, Ethiopia</strong></div><div><span class="fact-label">Currently</span><strong>Software Engineer</strong></div><div><span class="fact-label">Focused on</span><strong>Software · AI · NLP</strong></div></div>
+        </div>
+        <div class="hero-art">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="art-card portrait-card"><img class="portrait-image" src="assets/goatt.png" alt="Portrait of Haileamlak Belachew" width="687" height="1024" fetchpriority="high" /><span class="portrait-caption">Software Engineer · Goat</span></div>
+          <span class="art-spark spark-one">✳</span><span class="art-spark spark-two">✳</span><span class="art-cross">+</span>
+        </div>
+        <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
+      </section>
+      <div class="zigzag" aria-hidden="true"></div>
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@Lovable" />
-  <meta name="twitter:image" content="/preview.png" />
-</head>
+      <section class="about section-pad" id="about">
+        <div class="section-heading"><p class="eyebrow">01 / About</p><h2>Reliable systems.<br /><em>Local impact.</em></h2></div>
+        <div class="about-body">
+          <div class="prose">
+            <p>I’m a software engineer with a strong interest in artificial intelligence, research, and building technology that solves real-world problems.</p>
+            <p>My experience spans software products, financial technology, and AI-powered applications. At EagleLion Group, I contribute to large-scale financial and digital products mainly using Go, with experience designing backend services and building systems that need to be reliable at scale.</p>
+            <p>Alongside engineering, I’m increasingly interested in AI research, particularly in areas that can have an impact in Ethiopia and other communities with limited access to technology. I’m especially interested in practical AI systems that address problems that are often overlooked by mainstream research.</p>
+            <p>I also enjoy teaching and mentoring. I’ve taught algorithms and problem-solving, and mentored aspiring developers. I believe teaching is one of the best ways to grow while helping others grow too.</p>
+            <a class="text-link" href="#experience">Explore my experience <span>↘</span></a>
+          </div>
+          <div class="principles"><article><span class="principle-num">01</span><div><h3>Reliability by design</h3><p>Build services that handle failure and scale with care.</p></div></article><article><span class="principle-num">02</span><div><h3>Useful AI</h3><p>Make language technology more relevant to local communities.</p></div></article><article><span class="principle-num">03</span><div><h3>Share what I learn</h3><p>Teach, mentor, and make technical ideas easier to access.</p></div></article></div>
+        </div>
+      </section>
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
+      <section class="services section-pad" id="approach"><div class="section-heading"><p class="eyebrow">02 / Areas of focus</p><h2>Engineering for<br /><em>real-world needs.</em></h2><p class="section-deck">From dependable services to AI and education, I like work with a clear purpose.</p></div>
+        <div class="service-grid"><article class="service-card"><span class="card-icon">{ }</span><p class="eyebrow">01 — Engineering</p><h3>Software engineering</h3><p>Designing and building reliable software, from product features and APIs to scalable systems.</p><span class="card-arrow">↗</span></article><article class="service-card"><span class="card-icon">✳</span><p class="eyebrow">02 — Research</p><h3>AI for underserved communities</h3><p>Exploring AI research for communities with limited access to technology.</p><span class="card-arrow">↗</span></article><article class="service-card"><span class="card-icon">⌘</span><p class="eyebrow">03 — Community</p><h3>Teaching &amp; mentoring</h3><p>Algorithms, software engineering, and practical support for developers building their skills.</p><span class="card-arrow">↗</span></article></div>
+      </section>
 
+      <section class="experience section-pad" id="experience"><div class="section-heading"><p class="eyebrow">03 / Experience</p><h2>Work shaped by<br /><em>systems &amp; people.</em></h2></div><div class="experience-list">
+        <article class="experience-item"><div class="experience-date">JUL 2025 — NOW<br /><span>ADDIS ABABA</span></div><div><p class="eyebrow">EagleLion Group</p><h3>Software Engineer</h3><p>Working on backend services for fintech applications.</p> <p> Building Go services and REST APIs, moving selected workflows to Kafka, working with PostgreSQL and MongoDB, and improving security, logging, and observability across different critical services.</p><div class="tag-list"><span>Go</span><span>Kafka</span><span>PostgreSQL</span><span>MongoDB</span><span>Micro-services</span></div></div></article>
+        <article class="experience-item"><div class="experience-date">JAN 2025 — JUN 2025<br /><span>ADDIS ABABA</span></div><div><p class="eyebrow">A2SV</p><h3>Head of Education</h3><p>Led data structures and algorithms lectures and practice sessions for 30+ students while providing biweekly one-on-one mentorship to 12 students.</p><div class="tag-list"><span>Python</span><span>Algorithms</span><span>Teaching</span><span>Mentorship</span></div></div></article>
+      </div></section>
+
+      <section class="work section-pad" id="work"><div class="section-heading"><p class="eyebrow">04 / Selected projects</p><h2>Ideas built for<br /><em>people &amp; place.</em></h2><p class="section-deck">Software and AI products shaped by local needs and designed for meaningful impact.</p></div>
+        <div class="project-grid"><article class="project-card"><div class="project-visual visual-one"><div class="visual-top"><span>GUZO AI</span><span>01 / 03</span></div><div class="visual-shape shape-one"></div><img class="guzo-logo-art" src="assets/guzoailogo.png" alt="Guzo AI backpack logo" /><div class="visual-copy"><span>Explore<br />Ethiopia.</span><div class="visual-lines"><i></i><i></i><i></i></div></div></div><div class="project-meta"><div><p class="eyebrow">AI travel assistant · Flutter / FastAPI</p><h3>Guzo AI</h3><p>A travel assistant designed to help travelers discover Ethiopia, plan trips, explore places, translate between languages, and interact through multimodal conversations.</p></div><a class="project-link" href="https://drive.google.com/file/d/1FRjvPq7451wT8h8C-jS1m6xK29xbCn_i/view?usp=sharing" target="_blank" rel="noreferrer" aria-label="View Guzo AI demo">↗</a></div></article>
+          <article class="project-card"><div class="project-visual visual-three"><div class="visual-top"><span>CONCA</span><span>02 / 03</span></div><div class="dashboard"><div class="dash-side"></div><div class="dash-content"><span class="dash-title"></span><div class="dash-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="dash-row"><i></i><i></i><i></i></div></div></div><span class="dash-note">Plan -> Generate -> Evaluate -> Publish</span></div><div class="project-meta"><div><p class="eyebrow">Autonomous AI content platform · Go / React</p><h3>Conca</h3><p>A self-hosted content engine that turns trends into brand-specific content through an AI planning and generation workflow.</p></div><a class="project-link" href="https://github.com/haileamlak/conca" target="_blank" rel="noreferrer" aria-label="View Conca on GitHub">↗</a></div></article>
+          <article class="project-card"><div class="project-visual mktube-visual"><img src="assets/mk_tube_poster.png" alt="MK Tube streaming app displayed on three phones" loading="lazy" /></div><div class="project-meta"><div><p class="eyebrow">Streaming app · Flutter / Firebase</p><h3>MK Tube</h3><p>A live and on-demand video streaming application, awarded first place among more than 20 participants in a competition.</p></div><a class="project-link" href="https://github.com/haileamlak/mk-tube" target="_blank" rel="noreferrer" aria-label="View MK Tube on GitHub">↗</a></div></article></div>
+      </section>
+
+      <!-- <section class="notes section-pad" id="research"><div class="notes-intro"><p class="eyebrow">05 / Research direction</p><h2>AI for Ethiopian<br /><em>languages.</em></h2><p class="section-deck">Building useful resources for languages that remain underrepresented in modern AI.</p></div><div class="notes-list"><div class="note"><span class="note-date">01</span><span class="note-title"><strong>English–Ge’ez parallel datasets</strong><small>Resources to support translation and language modeling research</small></span><span class="note-arrow">✳</span></div><div class="note"><span class="note-date">02</span><span class="note-title"><strong>Low-resource NLP</strong><small>Practical methods for multilingual language technologies</small></span><span class="note-arrow">✳</span></div><div class="note"><span class="note-date">03</span><span class="note-title"><strong>Translation benchmarks</strong><small>Datasets and evaluation for machine translation</small></span><span class="note-arrow">✳</span></div><div class="note"><span class="note-date">04</span><span class="note-title"><strong>AI useful in Ethiopia</strong><small>Research and products shaped by local context</small></span><span class="note-arrow">✳</span></div></div></section> -->
+
+      <section class="now section-pad"><div class="now-mark">✳</div><p class="eyebrow">Currently exploring</p><h2>AI for Ethiopia.<br /><em>Software with impact.</em></h2><p class="now-copy">Researching practical AI for Ethiopia, exploring Ethiopian language NLP, and building useful software products shaped by real needs.</p><a class="button button-light" href="#contact">Connect with me <span aria-hidden="true">↗</span></a><div class="now-stamp">CURRENTLY<br />BUILDING<br /><span>◎</span></div></section>
+
+      <section class="background section-pad" id="background"><div class="section-heading"><p class="eyebrow">06 / Background</p><h2>Built on strong<br /><em>foundations.</em></h2><p class="section-deck">Education, technical skills, and community work.</p></div><div class="background-grid"><div><p class="eyebrow">Education</p><ul><li><strong>Addis Ababa University</strong></li><li>BSc, Computer Science </li><li>2021 - 2024</li></ul></div><div><p class="eyebrow">Engineering toolkit</p><ul><li>Go · Python · Flutter </li><li>REST · gRPC · Kafka · Gin · Chi</li><li>MongoDB · PostgreSQL · Redis</li><li>Google Cloud · Docker · Linux</li><li>Micro-services &amp; event-driven systems</li></ul></div><div><p class="eyebrow">Teaching &amp; community</p><ul><li><b>A2SV</b> · Student and mentor; led algorithms lectures and practice sessions, and provided one-on-one mentorship.</li><li><b>AddisCoder</b> · Teaching Assistant for a residential programming and algorithms program for high school students.</li><li><b>Cursor AI Hackathon Ethiopia 2026</b> · Mentor; supporting teams with problem validation, MVP prioritization, and technical/product decisions.</li></ul></div></div></section>
+
+      <section class="contact section-pad" id="contact"><div class="contact-heading"><p class="eyebrow">07 / Let’s work together</p><h2>Building something<br /><em>meaningful?</em></h2><p>I’m open to software engineering opportunities, AI research collaborations, open-source projects, and mentoring. If you’re building useful software or researching on AI, let’s connect.</p><a class="button button-dark" href="mailto:haileamlakbeat@gmail.com?subject=Hello%20Haileamlak">Email me <span aria-hidden="true">↗</span></a></div><div class="contact-details"><div><span class="eyebrow">EMAIL</span><a href="mailto:haileamlakbeat@gmail.com">haileamlakbeat@gmail.com <span>↗</span></a></div><div><span class="eyebrow">LINKEDIN</span><a href="https://linkedin.com/in/haileamlak" target="_blank" rel="noreferrer">linkedin.com/in/haileamlak <span>↗</span></a></div><div><span class="eyebrow">GITHUB</span><a href="https://github.com/haileamlak" target="_blank" rel="noreferrer">github.com/haileamlak <span>↗</span></a></div><div><span class="eyebrow">RÉSUMÉ</span><a href="https://drive.google.com/file/d/1cStRLDwxwep-9K5Qw6GaP-IRtIiQKtgS/view?usp=sharing" target="_blank" rel="noreferrer">View résumé <span>↗</span></a></div><div class="availability"><span class="status-dot"></span> Open to meaningful work</div></div><div class="contact-decoration" aria-hidden="true">HB.</div></section>
+    </main>
+    <div class="zigzag zigzag-bottom" aria-hidden="true"></div>
+    <footer class="site-footer"><a class="wordmark" href="#home">Haileamlak Belachew<span>.</span></a><span class="footer-note">Design inspired by <a style="color: #4B6B23; font-style: italic; font-weight: bold;" href="https://hannahmclaus.com" target="_blank">Hannah's↗</a> website</span><div class="footer-links"><a href="#about">About</a><a href="#work">Projects</a><a href="#contact">Contact</a><a href="https://linkedin.com/in/haileamlak" target="_blank" rel="noreferrer">LinkedIn ↗</a></div><span class="copyright">© <span id="year">2026</span> Haileamlak Belachew</span></footer>
+  </body>
 </html>

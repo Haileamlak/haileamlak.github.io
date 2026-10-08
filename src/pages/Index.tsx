@@ -12,6 +12,11 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/mee.jpg";
 import websiteLogo from "@/assets/right-down.png";
+import websiteLogo2 from "@/assets/right-down(2).png";
+import guzoAiPreview from "@/assets/guzo_ai_preview.png";
+import eaglelionLogo from "@/assets/eaglelion-logo.png";
+import a2svLogo from "@/assets/a2sv-logo.png";
+import aauLogo from "@/assets/aau-logo.png";
 
 const Index = () => {
   const [isDark, setIsDark] = useState(true);
@@ -25,24 +30,28 @@ const Index = () => {
         category: "TRAVEL • AI",
         summary: "Personalized travel assistant built for people exploring Ethiopia.",
         link: "https://drive.google.com/file/d/1FRjvPq7451wT8h8C-jS1m6xK29xbCn_i/view",
+        preview: guzoAiPreview,
       },
       {
         title: "Conca",
         category: "AUTONOMOUS CONTENT • AI AGENT",
         summary: "An autonomous content engine for modern growth teams.",
         link: "https://github.com/Haileamlak/conca",
+        preview: "/placeholder.svg",
       },
       {
         title: "MK Tube",
         category: "STREAMING PLATFORM",
         summary: "A live and on-demand video streaming app.",
         link: "https://github.com/Haileamlak/mk-tube",
+        preview: "/placeholder.svg",
       },
       {
         title: "Finote",
         category: "TRANSPORT TECH",
         summary: "Cross-country bus ticketing platform focused on Ethiopia.",
         link: "https://github.com/Haileamlak/finote",
+        preview: "/placeholder.svg",
       },
     ],
     []
@@ -53,11 +62,17 @@ const Index = () => {
       company: "EagleLion",
       role: "Software Engineer",
       period: "Jul 2025 — Present",
+      logo: eaglelionLogo,
+      description:
+        "Design and ship production features, improve backend reliability, and collaborate with cross-functional teams to deliver user-focused solutions.",
     },
     {
       company: "A2SV (Africa to Silicon Valley)",
       role: "Head of Education",
       period: "Jan 2025 — Jun 2025",
+      logo: a2svLogo,
+      description:
+        "Led learning programs for competitive programming and software engineering, mentored students, and coordinated technical curriculum execution.",
     },
   ];
 
@@ -66,6 +81,9 @@ const Index = () => {
       school: "Addis Ababa University",
       degree: "B.Sc. in Computer Science",
       period: "Jun 2021 — Jul 2024",
+      logo: aauLogo,
+      description:
+        "Built a strong foundation in algorithms, systems, and software engineering through coursework and hands-on team projects.",
     },
   ];
 
@@ -128,8 +146,8 @@ const Index = () => {
       <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-[1400px] flex-col px-4 pb-8 pt-6 sm:px-8">
         <header className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center justify-between">
-            <span className={`inline-flex items-center rounded-2xl border p-2 ${palette.card}`}>
-              <img src={websiteLogo} alt="HB" className="h-8 w-8 rounded-md object-cover" />
+            <span className={`inline-flex items-center rounded-2xl border p-2 `}>
+              <img src={isDark?websiteLogo:websiteLogo2} alt="HB" className={`h-8 w-8 rounded-md object-cover`} />
             </span>
             <button
               type="button"
@@ -203,6 +221,9 @@ const Index = () => {
             <p className={`mb-3 text-xs font-medium uppercase tracking-[0.24em] ${palette.textMuted}`}>Projects</p>
             <h2 className={`display-serif text-5xl leading-[0.95] ${palette.textMain}`}>{activeProject.title}</h2>
             <p className={`mt-4 text-xs font-semibold uppercase tracking-[0.2em] ${palette.textMuted}`}>{activeProject.category}</p>
+            <div className={`mt-5 overflow-hidden rounded-xl border ${isDark ? "border-zinc-800/80 bg-zinc-900/60" : "border-zinc-300 bg-white/80"}`}>
+              <img src={activeProject.preview} alt={`${activeProject.title} preview`} className="aspect-video w-full object-cover" />
+            </div>
             <p className={`mt-5 max-w-md text-sm leading-relaxed ${palette.textBody}`}>{activeProject.summary}</p>
             <a
               href={activeProject.link}
@@ -258,10 +279,19 @@ const Index = () => {
             <h3 className={`mb-4 text-xs font-medium uppercase tracking-[0.22em] ${palette.textMuted}`}>Experience</h3>
             <div className="space-y-4">
               {experiences.map((experience) => (
-                <div key={experience.company} className="">
-                  <p className={`text-sm font-semibold ${palette.textMain}`}>{experience.company}</p>
+                <div
+                  key={experience.company}
+                  className={`rounded-xl border p-3 ${
+                    isDark ? "border-zinc-700/60 bg-zinc-900/60" : "border-zinc-300 bg-white/70"
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <img src={experience.logo} alt={`${experience.company} logo`} className="h-8 w-8 rounded-md object-contain" />
+                    <p className={`text-sm font-semibold ${palette.textMain}`}>{experience.company}</p>
+                  </div>
                   <p className={`text-sm ${palette.textBody}`}>{experience.role}</p>
-                  <p className={`text-xs ${palette.textMuted}`}>{experience.period}</p>
+                  <p className={`mt-1 text-xs ${palette.textMuted}`}>{experience.period}</p>
+                  <p className={`mt-2 text-xs leading-relaxed ${palette.textBody}`}>{experience.description}</p>
                 </div>
               ))}
             </div>
@@ -271,10 +301,19 @@ const Index = () => {
             <h3 className={`mb-4 text-xs font-medium uppercase tracking-[0.22em] ${palette.textMuted}`}>Education</h3>
             <div className="space-y-4">
               {education.map((item) => (
-                <div key={item.school} className="">
-                  <p className={`text-sm font-semibold ${palette.textMain}`}>{item.school}</p>
+                <div
+                  key={item.school}
+                  className={`rounded-xl border p-3 ${
+                    isDark ? "border-zinc-700/60 bg-zinc-900/60" : "border-zinc-300 bg-white/70"
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <img src={item.logo} alt={`${item.school} logo`} className="h-8 w-8 rounded-md object-contain" />
+                    <p className={`text-sm font-semibold ${palette.textMain}`}>{item.school}</p>
+                  </div>
                   <p className={`text-sm ${palette.textBody}`}>{item.degree}</p>
-                  <p className={`text-xs ${palette.textMuted}`}>{item.period}</p>
+                  <p className={`mt-1 text-xs ${palette.textMuted}`}>{item.period}</p>
+                  <p className={`mt-2 text-xs leading-relaxed ${palette.textBody}`}>{item.description}</p>
                 </div>
               ))}
             </div>
