@@ -7,18 +7,87 @@
     <meta name="description" content="Haileamlak Belachew is a software engineer interested in AI research and building software with meaningful impact." />
     <meta property="og:title" content="Haileamlak Belachew" />
     <meta property="og:description" content="Haileamlak Belachew is a software engineer interested in AI research and building software with meaningful impact." />
-    <meta property="og:image" content="https://haileamlak.github.io/assets/goatt.png" />
+    <meta property="og:image" content="https://haileamlak.github.io/assets/goatt-resizedd.png" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://haileamlak.github.io/assets/goatt.png" />
+    <meta name="twitter:image" content="https://haileamlak.github.io/assets/goatt-resizedd.png" />
 
     <title>Haileamlak Belachew</title>
     <link rel="icon" type="image/png" href="assets/goatt.png">
+    <script>
+      (() => {
+        const root = document.documentElement;
+        let theme = 'light';
+
+        try {
+          const savedTheme = localStorage.getItem('haile-theme');
+          theme = savedTheme === 'dark' ? 'dark' : 'light';
+          if (savedTheme !== 'dark' && savedTheme !== 'light') {
+            localStorage.setItem('haile-theme', theme);
+          }
+        } catch {
+          // Keep the first render light when storage is unavailable.
+        }
+
+        const applyTheme = (isDark) => {
+          root.classList.toggle('dark', isDark);
+          document.body?.classList.toggle('dark', isDark);
+
+          const themeToggle = document.querySelector('.theme-toggle');
+          const themeIcon = document.querySelector('.theme-icon');
+          const themeLabel = document.querySelector('.theme-label');
+          if (themeToggle) {
+            themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+          }
+          if (themeIcon) themeIcon.textContent = isDark ? '☼' : '◐';
+          if (themeLabel) themeLabel.textContent = isDark ? 'Light mode' : 'Dark mode';
+
+          const themeColor = document.querySelector('meta[name="theme-color"]');
+          if (themeColor) themeColor.content = isDark ? '#1c2318' : '#f2f0dc';
+        };
+
+        applyTheme(theme === 'dark');
+
+        document.addEventListener('DOMContentLoaded', () => {
+          applyTheme(root.classList.contains('dark'));
+          document.querySelector('#year').textContent = new Date().getFullYear();
+        });
+
+        document.addEventListener('click', (event) => {
+          const target = event.target;
+          if (!(target instanceof Element)) return;
+
+          if (target.closest('.theme-toggle')) {
+            const nextTheme = root.classList.contains('dark') ? 'light' : 'dark';
+            applyTheme(nextTheme === 'dark');
+            try {
+              localStorage.setItem('haile-theme', nextTheme);
+            } catch {
+              // The active page still follows the manual toggle without storage.
+            }
+            return;
+          }
+
+          const menuToggle = target.closest('.menu-toggle');
+          const mobileNav = document.querySelector('.mobile-nav');
+          if (menuToggle && mobileNav) {
+            const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', String(!isOpen));
+            menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation' : 'Close navigation');
+            mobileNav.hidden = isOpen;
+          } else if (target.closest('.mobile-nav a') && mobileNav) {
+            mobileNav.hidden = true;
+            const toggle = document.querySelector('.menu-toggle');
+            toggle?.setAttribute('aria-expanded', 'false');
+            toggle?.setAttribute('aria-label', 'Open navigation');
+          }
+        }, true);
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -35,7 +104,9 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span></button>
     </header>
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
-      <a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Projects</a><a href="#research">Research</a><a href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Projects</a>
+      <!-- <a href="#research">Research</a> -->
+      <a href="#contact">Contact</a>
     </nav>
 
     <main id="main">
