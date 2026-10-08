@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#D8C5A5" />
     <meta name="description" content="Haileamlak Belachew is a software engineer interested in AI research and building software with meaningful impact." />
-    <meta property="og:title" content="Haileamlak Belachew | Software Engineer &amp; AI Researcher" />
+    <meta property="og:title" content="Haileamlak Belachew · Software Engineer" />
     <meta property="og:description" content="Haileamlak Belachew is a software engineer interested in AI research and building software with meaningful impact." />
     <meta property="og:url" content="https://haileamlak-b.web.app/" />
     <meta property="og:image" content="https://haileamlak-b.web.app/og-image.png" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Haileamlak Belachew | Software Engineer &amp; AI Researcher" />
+    <meta name="twitter:title" content="Haileamlak Belachew · Software Engineer" />
     <meta name="twitter:image" content="https://haileamlak-b.web.app/og-image.png" />
     <link rel="canonical" href="https://haileamlak.com/" />
 
-    <title>Haileamlak Belachew | Software Engineer &amp; AI Researcher</title>
+    <title>Haileamlak Belachew · Software Engineer</title>
     <link rel="icon" type="image/png" href="assets/goatt.png">
     <script>
       (() => {
@@ -91,6 +91,88 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .site-footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px 24px;
+      }
+
+      .site-footer > * {
+        min-width: 0;
+      }
+
+      .site-footer .scroll-cue {
+        position: static;
+        inset: auto;
+        z-index: auto;
+        margin: 0;
+      }
+
+      .site-footer .footer-note {
+        max-width: 24rem;
+        overflow-wrap: anywhere;
+      }
+
+      .site-footer .footer-links {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px 17px;
+      }
+
+      .site-footer .copyright {
+        white-space: nowrap;
+      }
+
+      @media (max-width: 850px) {
+        .site-footer {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) auto;
+          align-items: center;
+        }
+
+        .site-footer .wordmark {
+          grid-area: 1 / 1;
+        }
+
+        .site-footer .copyright {
+          grid-area: 1 / 2;
+          text-align: right;
+        }
+
+        .site-footer .footer-note {
+          grid-area: 2 / 1 / 3 / 3;
+          max-width: none;
+        }
+
+        .site-footer .footer-links {
+          grid-area: 3 / 1 / 4 / 3;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .site-footer {
+          grid-template-columns: minmax(0, 1fr);
+          gap: 14px;
+          padding-block: 24px;
+        }
+
+        .site-footer .wordmark,
+        .site-footer .footer-note,
+        .site-footer .footer-links,
+        .site-footer .copyright {
+          grid-area: auto;
+          grid-column: 1;
+          text-align: left;
+        }
+
+        .site-footer .copyright {
+          white-space: normal;
+        }
+      }
+    </style>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -120,7 +202,7 @@
           <p class="hero-intro">I’m a software engineer interested in AI research in  and in building technology that creates meaningful impact. I enjoy working across product and engineering, from practical AI to reliable digital systems.</p>
 
           <div class="button-row"><a class="button button-dark" href="#work">Explore my projects <span aria-hidden="true">↘</span></a><a class="button button-outline" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
-          <div class="hero-facts"><div><span class="fact-label">Based in</span><strong>Addis Ababa, Ethiopia</strong></div><div><span class="fact-label">Currently</span><strong>Software Engineer</strong></div><div><span class="fact-label">Focused on</span><strong>Research · AI · NLP</strong></div></div>
+          <div class="hero-facts"><div><span class="fact-label">Based in</span><strong>Addis Ababa, Ethiopia</strong></div><div><span class="fact-label">Currently</span><strong>Software Engineer</strong></div><div><span class="fact-label">Interested on</span><strong>Research · AI · NLP</strong></div></div>
         </div>
         <div class="hero-art">
           <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
@@ -169,6 +251,6 @@
       <section class="contact section-pad" id="contact"><div class="contact-heading"><p class="eyebrow">07 / Let’s work together</p><h2>Building something<br /><em>meaningful?</em></h2><p>I’m open to software engineering opportunities, AI research collaborations, open-source projects, and mentoring. If you’re building useful software or researching on AI, let’s connect.</p><a class="button button-dark" href="mailto:haileamlakbeat@gmail.com?subject=Hello%20Haileamlak">Email me <span aria-hidden="true">↗</span></a></div><div class="contact-details"><div><span class="eyebrow">EMAIL</span><a href="mailto:haileamlakbeat@gmail.com">haileamlakbeat@gmail.com <span>↗</span></a></div><div><span class="eyebrow">LINKEDIN</span><a href="https://linkedin.com/in/haileamlak" target="_blank" rel="noreferrer">linkedin.com/in/haileamlak <span>↗</span></a></div><div><span class="eyebrow">GITHUB</span><a href="https://github.com/haileamlak" target="_blank" rel="noreferrer">github.com/haileamlak <span>↗</span></a></div><div><span class="eyebrow">RÉSUMÉ</span><a href="https://drive.google.com/file/d/1cStRLDwxwep-9K5Qw6GaP-IRtIiQKtgS/view?usp=sharing" target="_blank" rel="noreferrer">View résumé <span>↗</span></a></div><div class="availability"><span class="status-dot"></span> Open to meaningful work</div></div><div class="contact-decoration" aria-hidden="true">HB.</div></section>
     </main>
     <div class="zigzag zigzag-bottom" aria-hidden="true"></div>
-    <footer class="site-footer"><a class="wordmark" href="#home">Haileamlak Belachew<span>.</span></a><span class="footer-note">Design inspired by <a style="color: #4B6B23; font-style: italic; font-weight: bold;" href="https://hannahmclaus.com" target="_blank">Hannah's↗</a> website</span><div class="footer-links"><a href="#about">About</a><a href="#work">Projects</a><a href="#contact">Contact</a><a href="https://linkedin.com/in/haileamlak" target="_blank" rel="noreferrer">LinkedIn ↗</a></div><span class="copyright">© <span id="year">2026</span> Haileamlak Belachew</span></footer>
+    <footer class="site-footer"><a class="scroll-cue" href="#home"><span></span> Back to the beginning</a><span class="footer-note">Design inspired by <a style="color: #4B6B23; font-style: italic; font-weight: bold;" href="https://hannahmclaus.com" target="_blank">Hannah's↗</a> website</span><div class="footer-links"><a href="#about">About</a><a href="#work">Projects</a><a href="#contact">Contact</a><a href="https://linkedin.com/in/haileamlak" target="_blank" rel="noreferrer">LinkedIn ↗</a></div><span class="copyright">© <span id="year">2026</span> Haileamlak Belachew</span></footer>
   </body>
 </html>
