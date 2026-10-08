@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#D8C5A5" />
     <meta name="description" content="Haileamlak Belachew is a software engineer interested in AI research and building software with meaningful impact." />
-    <meta property="og:title" content="Haileamlak Belachew" />
+    <meta property="og:title" content="Haileamlak Belachew | Software Engineer &amp; AI Researcher" />
     <meta property="og:description" content="Haileamlak Belachew is a software engineer interested in AI research and building software with meaningful impact." />
-    <meta property="og:image" content="https://haileamlak.github.io/assets/goatt-resizedd.png" />
+    <meta property="og:url" content="https://haileamlak-b.web.app/" />
+    <meta property="og:image" content="https://haileamlak-b.web.app/og-image.png" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://haileamlak.github.io/assets/goatt-resizedd.png" />
+    <meta name="twitter:title" content="Haileamlak Belachew | Software Engineer &amp; AI Researcher" />
+    <meta name="twitter:image" content="https://haileamlak-b.web.app/og-image.png" />
+    <link rel="canonical" href="https://haileamlak.com/" />
 
-    <title>Haileamlak Belachew</title>
+    <title>Haileamlak Belachew | Software Engineer &amp; AI Researcher</title>
     <link rel="icon" type="image/png" href="assets/goatt.png">
     <script>
       (() => {
@@ -20,10 +23,10 @@
         let theme = 'light';
 
         try {
-          const savedTheme = localStorage.getItem('haile-theme');
+          const savedTheme = localStorage.getItem('theme-choice');
           theme = savedTheme === 'dark' ? 'dark' : 'light';
           if (savedTheme !== 'dark' && savedTheme !== 'light') {
-            localStorage.setItem('haile-theme', theme);
+            localStorage.setItem('theme-choice', theme);
           }
         } catch {
           // Keep the first render light when storage is unavailable.
@@ -61,7 +64,7 @@
             const nextTheme = root.classList.contains('dark') ? 'light' : 'dark';
             applyTheme(nextTheme === 'dark');
             try {
-              localStorage.setItem('haile-theme', nextTheme);
+              localStorage.setItem('theme-choice', nextTheme);
             } catch {
               // The active page still follows the manual toggle without storage.
             }
